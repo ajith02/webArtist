@@ -1,0 +1,46 @@
+.code-snippet {
+    background-color: #021028;
+    color: rgb(171, 178, 191);
+    white-space: nowrap;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em auto;
+    overflow-x: auto;
+  }
+  
+  .code-format {
+    padding-left: 1.5em;
+  }
+  
+  .code-spacing {
+    padding-block: 1em;
+  }
+  
+  .code-snippet p{
+    line-height: 0.5;
+  }
+
+  .code-snippet div {
+    padding-block: .3em;
+  }
+  
+  .doctype {
+    color: rgb(97, 174, 238);
+  }
+  
+  .tag-color {
+    color: rgb(244, 108, 117);
+  }
+  
+  .color-yellow {
+    color: rgb(209, 154, 102);
+  }
+  
+  .html-comment {
+    color: rgb(177, 142, 177);
+  }
+  
+  .color-green {
+    color: rgb(152, 195, 121);
+  }
+  

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variables | JavaScript</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon " href="./assets/images/logo.png" />
+
+    <!-- Common css -->
+    <link rel="stylesheet" type="text/css" href="./assets/commonStyle.css" />
+
+    <!-- Code snippet css -->
+    <link rel="stylesheet" href="./assets/codeSnippet.css" />
+
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">webArtist</div>
+      <div class="menu">
+        <label for="menu"><i class="fa-solid fa-bars"></i></label>
+      </div>
+      <input type="checkbox" id="menu" />
+
+      <aside>
+        <p>Topics</p>
+        <ul>
+          <li><a href="./overview.html">Overview</a></li>
+          <li><a href="./webArtist.html">webArtist</a></li>
+          <li><a href="./variables.html">Variable</a></li>
+          <li><a href="./Operator_Precedence.html">Operator Precedence</a></li>
+          <li><a href="./Arithmetic_Operator.html">Arithmetic Operator</a></li>
+        </ul>
+      </aside>
+    </header>
+
+    <main>
+      <!-- variables start here -->
+      <section>
+        <h1>JavaScript variables</h1>
+        <p>
+          Enda programming language edhuthalum variables nu oru concept irukum
+          so adhae matri javascript laaium variables iruku.
+        </p>
+        <p>
+          Varaiables na ena na for example, ipo nambo oru porul safe ah pothu
+          veika ena use panuvom mostly common ah ellarum oru box use panuvom
+          anda box oru place la vechidhuvom so thirupi venum naalum
+          edhuthukulam. Anda box ku oru name vechitha yaru kita sonalum edhuthu
+          tharuvanga. So, adhae matri tha programming la oru
+          <span class="important-words">value</span> store pani veika
+          <span class="important-words"> variables</span> use agudhu.
+        </p>
+        <p>
+          Simple ah solanum na
+          <span class="important-words">variables</span> vandhu epdi box ku name
+          veikuromo adhae matri inga oru value kupida adhuku oru<span
+            class="important-words"
+          >
+            name</span
+          >
+          veipom because anda value call pana.
+        </p>
+        <p>For example, <span class="important-words">num = 5</span></p>
+        <div class="image-wrapper">
+          <img src="./assets/images/variables.jpg" alt="variables" />
+        </div>
+      </section>
+      <!-- variables end here -->
+
+      <section>
+        <h2>Common DataTypes in Programming</h2>
+        <p>
+          Before, javascript variables epdi use pandrathu nu therinjikuradhuku
+          munnadi <span class="important-words"> data types</span> na ena nu
+          therinjikanum.
+        </p>
+        <p>
+          Data types na onnum ila simple ah soldra ipo
+          <span class="important-words">num = 5</span> idhula 5 vandu
+          <span class="important-words">value</span> nu sona idhula 5 vandu
+          number but anda value number ah tha irukanum nu avaisiyam ila oru
+          <span class="important-words">letter</span> (or)
+          <span class="important-words">words</span> ila
+          <span class="important-words">decimal</span> epdi vena irukulam.
+          Idhula ella humans kum purium but machine ku pruriyadhu because
+          machine ku purinjianda only
+          <span class="important-words">0 and 1</span> tha anda problem solve
+          pana tha datatype kandu pudichanga.
+        </p>
+        <p>
+          Apdi ethana types of data types iruku nu pathom na common ah oru 5
+          data types soldra,
+        </p>
+        <ul>
+          <li>Intergers (numbers)</li>
+          <li>Float (decimal)</li>
+          <li>Character</li>
+          <li>String</li>
+          <li>Boolean</li>
+        </ul>
+
+        <!-- Interger -->
+        <article>
+          <p>
+            <b>Intergers : </b>Integer ya short ah
+            <span class="important-words">int</span>
+            nu soluvanga. Inda data type use pani nambo
+            <span class="important-words">numbers</span> mathum tha store pana
+            mudium.
+          </p>
+          <div class="code-snippet">
+            <p>
+              <span class="tag-color">int</span
+              ><span class="color-yellow"> a </span>=
+              <span class="color-green"> 5 ;</span>
+            </p>
+          </div>
+          <p>
+            Idhula <span class="important-words">a </span> vandu variable
+            name<span class="important-words"> 5 </span>vandu value
+            <span class="important-words">int</span>
+            vandu data type.
+          </p>
+        </article>
+
+        <!-- Float -->
+        <article>
+          <p>
+            <b>Float :</b> Inda datatype use pani nambo
+            <span class="important-words">decimal (1.5) </span> value mathum tha
+            store pana mudium.
+          </p>
+          <div class="code-snippet">
+            <p>
+              <span class="tag-color">float</span
+              ><span class="color-yellow"> a </span>=
+              <span class="color-green"> 1.5 ;</span>
+            </p>
+          </div>
+          <p>
+            Same idhula <span class="important-words">a</span> variable name
+            <span class="important-words">1.5 </span>value
+            <span class="important-words">float</span> datatype.
+          </p>
+        </article>
+
+        <!-- Character -->
+        <article>
+          <p>
+            <b>Character :</b> character ah short ya
+            <span class="important-words">char</span> nu soluvanga. Inda
+            datatype use pani nambo
+            <span class="important-words">single character</span> mathum tha
+            store store pana mudium and main ah character value ya
+            <span class="important-words">single quotes (' ')</span> la tha
+            podanum apo tha machine ku idhu character nu purium.
+          </p>
+          <div class="code-snippet">
+            <p>
+              <span class="tag-color">char</span
+              ><span class="color-yellow"> a </span>=
+              <span class="color-green"> 'A' ;</span>
+            </p>
+          </div>
+          <p>
+            Same adhae matri idhula <span class="important-words">a</span> vandu
+            variable <span class="important-words">'A'</span> vandu value
+            <span class="important-words">char</span> vandu datatype.
+          </p>
+        </article>
+
+        <!-- String -->
+        <article>
+          <p>
+            <b>String :</b> Inda datatype use pani
+            <span class="important-words">set of character</span> store
+            panikulam like
+            <span class="important-words">webArtist.</span> String la variable
+            name kudukum podu adhu odha value ethana character irukum nu mention
+            pananum. Adhae matri string la values kudukum podu
+            <span class="important-words"> double quotes</span> la kudukanum.
+          </p>
+          <div class="code-snippet">
+            <p>
+              <span class="tag-color">str</span
+              ><span class="color-yellow"> a [ 9 ] </span>=
+              <span class="color-green"> "webArtist" ;</span>
+            </p>
+          </div>
+          <p>
+            Same adhae matri idhula
+            <span class="important-words">a [ 9 ]</span> variable name
+            <span class="important-words">webArtist</span> value
+            <span class="important-words">str</span> datatype.
+          </p>
+        </article>
+
+        <!-- Boolean -->
+        <article>
+          <p>
+            <b>Boolean :</b> Inda datatype use pani nambo
+            <span class="important-words">true</span> and
+            <span class="important-words">false</span> inda rendu value store
+            panikulam. Inda rendu value va tha boolean value nu soluvanga.
+          </p>
+          <div class="code-snippet">
+            <p>
+              <span class="tag-color">boolean</span
+              ><span class="color-yellow"> a </span>=
+              <span class="color-green"> true ;</span>
+            </p>
+          </div>
+          <p>
+            Same adhae matri, idhulaium
+            <span class="important-words">a</span> value
+            <span class="important-words">true</span> vandu boolean value
+            <span class="important-words">boolean</span> datatype.
+          </p>
+        </article>
+        <p>
+          <span class="important-words">Note :</span> Mela soli irukura
+          datatypes la commmon ah machine ku human values epdi puriya veikuranga
+          nu common ah soli iruka with example ah, na sona example particular ah
+          enda programming language use panala common ah sona because
+          <span>javascript</span> la nambo inda matri datatypes use pana mathom
+          😅
+        </p>
+      </section>
+
+      <!-- Rules to declare js variables -->
+      <section>
+        <article>
+          <h2>Rules/Identifier while declaring a JavaScript variable</h2>
+          <p>
+            JavaScript la variable declare pandrathu ku nu sila rules iruku adha
+            <span class="important-words">syntax</span> nu soluvanga.
+          </p>
+          <h3>Rule No</h3>
+          <ol>
+            <li>
+              JavaScript la irukura ella variable name
+              <span class="important-words">case-sensitive</span> apdina
+              <span class="important-words">webArtist</span> idhuvum
+              <span class="important-words">WebArtist</span> idhuvum vera vera
+              variable name javascript la because first word starting letter
+              <span class="important-words">small</span> second word starting
+              letter <span class="important-words">caps.</span>
+            </li>
+            <li>
+              JavaScript la letters, numbers, symbols like
+              <span class="important-words">dollar sign ($)</span> and
+              <span class="important-words">underscore (_)</span> idhula ellamae
+              variable la use panalam.
+            </li>
+            <li>
+              But, varaiable name starting la numbers iruka kudhadu only
+              alphabets.
+            </li>
+            <li>
+              Adhae matri javascript ku nu thaniya odhuka patha words adha
+              <span class="important-words">reserved words</span> (or)
+              <span class="important-words">keywords</span> nu soluvanga anda
+              word variable name ah use pana kudhadu.
+            </li>
+          </ol>
+        </article>
+        <article>
+          <h2>Key points,</h2>
+          <ul>
+            <li>
+              Ella javascript variables oru
+              <span class="important-words">unique</span> name vechi
+              <span class="important-words">identify</span> panuvanga adhuku
+              peru <span class="important-words">Identifier</span> nu soluvanga.
+            </li>
+            <li>
+              Ipo HTML la multiple space kuduthalum adhu allow panadhu but
+              javascript la multiple space
+              <span class="important-words">allow panum.</span>
+            </li>
+            <li>
+              Orae line la neriya vaiable declare panalam by using
+              <span class="important-words">( , )</span> comma.
+            </li>
+            <li>
+              Adhae matri javascript la enda matri datatype vena store panikulam
+              adha epo vena change panikulam.
+            </li>
+            <li>
+              JavaScript la variable declare panum podu rendu technical word use
+              panuvanga
+              <span class="important-words">variable declaration</span> and
+              <span class="important-words">value assignment.</span>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Examples for correct & incorrect variable  declaration -->
+        <article>
+          <h3>Examples</h3>
+          <ul>
+            <li>
+              Proper ah epdi javascript variables ya declare pananum na with
+              <span class="important-words">breaks</span> and
+              <span class="important-words">spaces.</span>
+              <div class="code-snippet">
+                <p>
+                  <span class="tag-color">var </span
+                  ><span class="color-yellow"> a </span>=
+                  <span class="color-green"> 5 ;</span>
+                </p>
+              </div>
+            </li>
+            <li>
+              Orae line la ethana variable vena epdi declare pandrathu na
+              <div class="code-snippet">
+                <p>
+                  <span class="tag-color">var </span
+                  ><span class="color-yellow"> a </span>=
+                  <span class="color-green"> 1</span>,
+                  <span class="color-yellow">b </span>=
+                  <span class="color-green"> 2 ;</span>
+                </p>
+              </div>
+            </li>
+            <li>
+              JavaScript variable la
+              <span class="important-words">reserved</span> word use pana
+              <span class="important-words">error</span> varum like 👇
+              <div class="code-snippet">
+                <p>
+                  <span class="tag-color">var </span
+                  ><span class="color-yellow"> break </span>=
+                  <span class="color-green"> 1 ;</span>
+                  <span class="html-comment"
+                    >// idhu break vandu keyword apdi nu error varum</span
+                  >
+                </p>
+              </div>
+            </li>
+            <li>
+              Proper ah epdi variable declare pandrathu na
+              <div class="code-snippet">
+                <p><span class="tag-color">var </span>web_Artist;</p>
+              </div>
+            </li>
+            <li>
+              Invalid variable declaration
+              <div class="code-snippet">
+                <p>
+                  <span class="tag-color">var </span
+                  ><span class="color-yellow"> 123name ;</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <!-- 3 ways to decalare js variable -->
+      <section>
+        <h2>3 Ways to declare js variables</h2>
+        <p>
+          Already nambo patha matri matha programming language la oru value
+          store pananum na datatype mention pananum apo tha machine ku purium
+          but nengalae yosichi parunga oru program la ethana value use panuvom
+          apo ethana datatype kudukuradhu its like so confusing anda problem
+          solve pana tha javascript la
+          <span class="important-words">keywords</span> kondu vandanga.
+        </p>
+        <p>
+          <span class="important-words">Keywords</span> adhu ena panum na nambo
+          kudukura value ena matri ahna
+          <span class="important-words">datatype</span> nu javascript engine
+          automatic ah edhuthukum because already nambo pathom javascript
+          <span class="important-words">dynamic programming language.</span>
+        </p>
+        <p>
+          Sari keywords use pana podhum automatic ah datatype edhuthukom nu sona
+          adhu ena keyword na javascript 3 keywords use variable create panalam.
+          <span class="important-words">var, </span
+          ><span class="important-words">let,</span>and
+          <span class="important-words">const</span>
+        </p>
+
+        <!-- var variable -->
+        <article>
+          <h2><span>var</span> keyword</h2>
+          <p>
+            JavaScript la first kondu vanda keyword
+            <span class="important-words">var</span> keyword.
+          </p>
+          <p>
+            Oru variable declare pana variable name ku munnadi
+            <span class="important-words">var</span> keyword use pananum.
+          </p>
+          <p>
+            JavaScript la oru variable create pandrathu ku technical name
+            <span class="important-words">variable declaration.</span>
+          </p>
+          <div class="code-snippet">
+            <p>
+              <span class="tag-color">var </span
+              ><span class="color-yellow"> a ;</span>
+            </p>
+          </div>
+          <p>
+            Variable create pana piragu anda variable la enda value irukadhu
+            technical ah adhae <span class="important-words">undefined</span> nu
+            soluvanga we will discuss that later.
+          </p>
+          <p>
+            Anda variable ku value kudukanum na equal
+            <span class="important-words">( = )</span> sign use pananum adhuku
+            peru technical ah <span class="important-words">assignment</span> nu
+            soluvanga.
+          </p>
+          <div class="code-snippet">
+            <p>
+              <span class="color-yellow"> a </span>=
+              <span class="color-green"> 5 ;</span>
+            </p>
+          </div>
+          <p>
+            JavaScript la oru line semicolon
+            <span class="important-words">( ; )</span> pothu mudicha anda line
+            <span class="important-words"> statement</span> nu soluvanga.
+            Semicolon podala naalum work agum but semicolon use panum podu anda
+            line ingayae mudinjuchiruchi so next line polam nu poidhum anda line
+            enga mudium nu thedhadu.
+          </p>
+        </article>
+
+        <!-- Declare variable without var keyword -->
+        <article>
+          <h3>Declaring variable without the var keyword</h3>
+          <p>
+            Oru variable declare pananum na
+            <span class="important-words">var</span> keyword use pananum nu sona
+            but suppose var keyword use panama irunda ena gum...???
+          </p>
+          <div class="code-snippet">
+            <p>
+              <span class="color-yellow"> a </span>=
+              <span class="color-green"> 5 ;</span>
+            </p>
+            <p>
+              <span class="color-yellow">console</span>.log(a);
+              <span class="html-comment">//output = 5</span>
+            </p>
+          </div>
+          <p>
+            Because, javascript la enda keyword mention panama oru variable ku
+            oru value assign pana by default adhu
+            <span class="important-words">var</span> keyword adhuvae pothukum
+            but nambaluku theriyadhu.
+          </p>
+          <p>
+            <b>Note:</b> value assign panum podhu mathum tha keyword use panala
+            na error varadhu but verum variable name mathum use pana
+            <span class="important-words">RefernceError</span> varum.
+          </p>
+          <div class="code-snippet">
+            <p>
+              <span class="color-yellow"> webArtist ;</span>
+              <span class="html-comment"
+                >//Uncaught ReferenceError: webArtist is not defined</span
+              >
+            </p>
+          </div>
+        </article>
+
+        <!-- Redeclare & Reassignment in var-->
+        <article>
+          <h3>Re-declare and Re-assignment is possible in var</h3>
+          <p>
+            Re-declare apdi na ena na oru variable name var keyword use pani
+            declare panithu adhae variable name thirupi adhae var keyword vechi
+            declare pandrathu tha re-declare.
+          </p>
+          <div class="code-snippet">
+            <p>
+              <span class="tag-color">var </span>
+              <span class="color-yellow"> a ;</span>
+              <span class="html-comment">// Declaration</span>
+            </p>
+            <p>
+              <span class="tag-color">var </span>
+              <span class="color-yellow"> a ;</span>
+              <span class="html-comment">// Re-declaration</span>
+            </p>
+          </div>
+          <p>
+            Re-assignment apdi na ena na oru variable ku oru value assign
+            panithu anda value vena na vera value assign pana pora nu vera value
+            assign pana adhu [eru tha re-assign.
+          </p>
+          <div class="code-snippet">
+            <p>
+              <span class="tag-color">var </span>
+              <span class="color-yellow"> a </span>=
+              <span class="color-green"> 5 ;</span>
+              <span class="html-comment">// Assign</span>
+            </p>
+            <p>
+              <span class="color-yellow"> a </span>=
+              <span class="color-green"> "webArtist" ;</span>
+              <span class="html-comment">// Re-assign</span>
+            </p>
+          </div>
+        </article>
+
+        <!-- Declare variable in let -->
+        <article>
+          <h2>let keyword</h2>
+          <p>
+            <span class="important-words">let</span> keyword
+            <span class="important-words">ES6 (2015)</span> la tha introduce
+            panaga. Idhuvum same var keyword matri tha variable ku munnadi use
+            pananum.
+          </p>
+          <div class="code-snippet">
+            <p>
+              <span class="tag-color">let</span>
+              <span class="color-yellow"> a </span>=
+              <span class="color-green"> 5 ;</span>
+            </p>
+          </div>
+        </article>
+
+        <!-- Redeclare & Reassignment in let-->
+        <article>
+          <h3>Re-declare is not possible and Re-assign is possible in let</h3>
+          <p>
+            let use pani varaible create panum podu
+            <span class="important-words">re-declare is not possible.</span>
+          </p>
+          <div class="code-snippet">
+            <p>
+              <span class="tag-color">let </span>
+              <span class="color-yellow"> a ;</span>
+              <span class="html-comment">// Declaration</span>
+            </p>
+            <p>
+              <span class="tag-color">let </span>
+              <span class="color-yellow"> a ;</span>
+              <span class="html-comment"
+                >// Re-declaration - this line tells 'a' has been already
+                declared</span
+              >
+            </p>
+          </div>
+          <p>
+            But, <span class="important-words">re-assign is possible</span> in
+            let.
+          </p>
+          <div class="code-snippet">
+            <p>
+              <span class="tag-color">let </span>
+              <span class="color-yellow"> a </span> =
+              <span class="color-green">5 ;</span>
+              <span class="html-comment">// Assign</span>
+            </p>
+            <p>
+              <span class="tag-color">let </span>
+              <span class="color-yellow"> a </span> =
+              <span class="color-green">10 ;</span>
+              <span class="html-comment">// Re-assign</span>
+            </p>
+          </div>
+        </article>
+
+        <!-- const keyword -->
+        <article>
+          <h2>const keyword</h2>
+          <p>
+            <span class="important-words">const</span> keyword use pana
+            re-declaration and re-assign rendum pana mudiyadhu.
+          </p>
+          <div class="code-snippet">
+            <p>
+              <span class="tag-color">const </span>
+              <span class="color-yellow"> a </span>
+              <span class="html-comment">// Declaration</span>
+            </p>
+            <p>
+              <span class="tag-color">const </span>
+              <span class="color-yellow"> a ;</span>
+              <span class="html-comment"
+                >// Re-declaration - this line tells 'missing' initilaizer in
+                const</span
+              >
+            </p>
+          </div>
+          <div class="code-snippet">
+            <p>
+              <span class="tag-color">const </span>
+              <span class="color-yellow"> a </span> =
+              <span class="color-green">5 ;</span>
+              <span class="html-comment">// Assign</span>
+            </p>
+            <p>
+              <span class="tag-color">const </span>
+              <span class="color-yellow"> a </span> =
+              <span class="color-green">10 ;</span>
+              <span class="html-comment"
+                >// Re-assign - this line tells 'identifier' a has been already
+                declared</span
+              >
+            </p>
+          </div>
+        </article>
+
+        <!-- variable hoisting -->
+        <article>
+          <h2>JavaScript Variable Hoisting</h2>
+          <p>
+            JavaScript la most important and unique feature ena nu pathom na
+            <span class="important-words">variable hoisting</span> or
+            <span class="important-words">var hoisting.</span>
+          </p>
+          <p>
+            Adhu ena feature apdi na oru variable ku value assign pani anda
+            value use pana piragu variable declaration pana kuda work agum.
+          </p>
+          <p>Because, javascript la <span class="important-words">variable declartaion</span> code la enga declare panalum adhu code odha top ku edhuthu pothukom anda concept ku peru tha <span class="important-words">hoisting.</span></p>
+          <p><b>For example,</b></p>
+          <div class="code-snippet">
+            <p>
+              <span>hoistedVariable = </span>
+              <span class="color-yellow"> 1 ;</span>
+            </p>
+            <p>
+              <span class="tag-color">var </span> hoistedVariable;
+              </p>
+          </div>
+          <p>Mela irukura code hoisting panadhuku piragu epdi iruku na like this 👇 but nambaluku adhu theriyadhu.</p>
+          <div class="code-snippet">
+            <p>
+              <span class="tag-color">var </span> hoistedVariable;
+              </p>
+            <p>
+              <span>hoistedVariable = </span>
+              <span class="color-yellow"> 1 ;</span>
+            </p>
+          </div>
+          <p><b>Note :</b> <span class="important-words">Hoisting</span> variable declaration mathum tha top ku kondu pogum, variable value assign pandrathu la top kondu pogadhu.</p>
+          <p><b>For example,</b></p>
+          <div class="code-snippet">
+            <p>
+              <span>hoistedVariable = </span>
+              <span class="color-yellow"> 1 ;</span>
+            </p>
+            <p><span class="color-yellow">console.</span>log(hoistedVariable); <span class="html-comment">// output = 1</span></p>
+            <p>
+              <span class="tag-color">var </span> hoistedVariable;
+            </p>
+            <p class="html-comment code-spacing">// Below code will not hoisted</p>
+              <p>
+                <span class="tag-color">var </span> hoistedVariable;
+              </p>
+              <p><span class="color-yellow">console.</span>log(hoistedVariable); <span class="html-comment">// output = undefined</span></p>
+              <p>
+                <span>hoistedVariable = </span>
+                <span class="color-yellow"> 1 ;</span>
+              </p>
+          </div>
+          <p>Ena tha hoisting declaration ya code odha top ku kondu poga use ahnalum it is not recommend to declare a variable after assign a value. Best enga value assign pandramo adhuku melaiya variable declare pandrathu tha best practice.</p>
+        </article>
+
+        <!-- Hoisting with let and const -->
+        <article>
+          <h2>Hoisting of let and const variable</h2>
+          <p><span class="important-words">let</span> and <span class="important-words">const</span> kuda  <span class="important-words">hoist agum</span> ungaluku nalavae therium declaration mathum tha hoist agum value assign pandrathu la hoist agadhu nu but javascript la let and const use pani variable declare pana value assign pani tha aganum so adhunala hoist aguradhu correct ah nambala paaka mudiyadhu.</p>
+          <div class="code-snippet">
+            <div><span  class="color-yellow">console.</span>log ( b );</div>
+            <div><span class="tag-color">let</span> a = 5;</div>
+          </div> 
+          <p>Mela irukura code execute pana <span class="important-words">ReferenceError: b is not defined</span> inda error tha varum. Idhuku meaning javascript nala b nu oru variable ya identify pana mudiyala so adhu b nu oru variable nenga define panala apdi nu soludhu.</p>
+          <div class="code-snippet">
+            <div><span  class="color-yellow">console.</span>log ( a );</div>
+            <div><span class="tag-color">let</span> a = 5;</div>
+          </div> 
+          <p>Inda code execute pani pathinga na <span class="important-words">cannot access 'a' before initialization</span> apdi nu varum apdi na ena arutham <span class="important-words">a</span> nu variable value assign panamae nenga access pana try pandringa apdi nu soludhu.</p>
+          <p>Inga tha nenga nala focus pananum already na sona javascript intepretor language apdi na first line error iruku nu angaiya stop agidhum next line ku pogadhu.</p>
+          <p>Mela irukura code la cannot access tha varudhu apdi na ena arutham <span class="important-words">let a</span> hoisting nadhandu mela poiduchi adhunala tha javascript ku a nu variable iruku nu theriudhu but at the same time let use pani decalare pana value assign pananum rule irukuradhu nala cannot access varudhu apdi let hoist agala na javascript ku epdi therium a nu oru variable iruku nu...??? </p>
+          <p><span class="important-words">const</span> let matriyae tha work agum hoisting la.</p>
+          <p>So the conclusion is <span class="important-words">let</span> and <span class="important-words">const</span> decalaration hoist agum but value assign agadhu.</p>
+        </article>
+
+        <!-- var vs let vs const -->
+        <article>
+          <h2>Differnce between var, let and const</h2>
+          <div class="responsive-table">
+            <table>
+              <tr>
+                <th>var</th>
+                <th>let</th>
+                <th>const</th>
+              </tr>
+              <tr>
+                <td>Hoisting nadakum but default value <span class="important-words">undefined</span> nu varum value assign panalana.</td>
+                <td>Hoisting nadakum but declaration panum podhae value assign pananum naala error varum.</td>
+                <td>Hoisting nadakum but declaration panum podhae value assign pananum naala error varum.</td>
+              </tr>
+              <tr>
+                <td>Re-declared and re-assign is possible.</td>
+                <td>Re-declare is not possible but re-assign is possible.</td>
+                <td>Re-declare and re-assign both are not possible.</td>
+              </tr>
+              <tr>
+                <td>Inda matri declare pandrathu rombo old way.</td>
+                <td>New way to declare variable, introduce in ES6.</td>
+                <td>New way to declare variable, introduce in ES6.</td>
+              </tr>
+            </table>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made with 💖 | <span>webArtist</span></p>
+    </footer>
+  </body>
+</html>

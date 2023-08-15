@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Overview | JavaScript</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon " href="./assets/images/logo.png" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" type="text/css" href="./assets/commonStyle.css" />
+
+    <!-- Code snippet css -->
+    <link rel="stylesheet" href="./assets/codeSnippet.css">
+    
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">webArtist</div>
+      <div class="menu">
+        <label for="menu"><i class="fa-solid fa-bars"></i></label>
+      </div>
+      <input type="checkbox" id="menu" />
+
+      <aside>
+        <p>Topics</p>
+        <ul>
+          <li><a href="./overview.html">Overview</a></li>
+          <li><a href="./webArtist.html">webArtist</a></li>
+          <li><a href="./variables.html">Variable</a></li>
+          <li><a href="./Operator_Precedence.html">Operator Precedence</a></li>
+          <li><a href="./Arithmetic_Operator.html">Arithmetic Operator</a></li>
+        </ul>
+      </aside>
+    </header>
+
+    <main>
+      <!-- Overview start here -->
+      <section>
+        <h1>Overview</h1>
+        <p>
+          Before learning JavaScript, HTML & CSS basics padichithu javascript
+          learn panunga so that ungaluku easy ah purium.
+        </p>
+        <p>
+          In a web page, HTML vandu structure create pana use agum, CSS is used
+          to style the content like colors, fonts, etc.., but oru web page,
+          verum HTML & CSS use pana adhu static ah tha irukum.
+        </p>
+        <p>
+          But adhuvae javascript use pana nambala
+          <span class="important-words">dynamic page</span> create pana mudium
+          (like social media la oru oru user ku yetha matri content display
+          pandra matri).
+        </p>
+        <p>
+          For example, ipo oru user oru button click pana website odha theme
+          change aguradhu like dark mode and read more button click pana neriya
+          content display aguradhu idhu matri neriya visiyam panalam user kuda
+          interact pana.
+        </p>
+        <div class="image-wrapper">
+          <img src="./assets/images/HTML-CSS-JS.png" alt="html-css-js" />
+        </div>
+      </section>
+      <!-- Overview end here -->
+
+      <!-- what is js start here -->
+      <section>
+        <h1>What is JavaScript</h1>
+        <ul>
+          <li>
+            <span class="important-words">One language to code them all.</span>
+            <p>
+              Adhu ena one language to code them all apdi na, javascript vechi
+              nambo web app panalam, javascript la
+              <span class="important-words">node js</span> padichom na back
+              end(server ku program panalam),
+              <span class="important-words">react native</span> padichom na
+              mobile app develop panalam,
+              <span class="important-words">electron js</span> padichom na
+              desktop ku sofware develop panalam so if you learn js you can
+              develop whatever you want.
+            </p>
+          </li>
+          <li>
+            JavaScript is the
+            <span class="important-words"
+              >world's most popular programming language.</span
+            >
+          </li>
+          <li>
+            JavaScript is a
+            <span class="important-words"
+              >high-level interpreted programming language.</span
+            >
+            <ol>
+              <li>Hight level na easy to understand.</li>
+              <li>
+                Interpreted na javascript code ya line by line tha execute
+                panum.
+              </li>
+            </ol>
+          </li>
+          <li>
+            JavaScript is a
+            <span class="important-words"
+              >cross-platform, interpreted, object-oriented, just-in-time
+              compiled scripting language.</span
+            >
+          </li>
+          <li>
+            JavaScript
+            <span class="important-words">client side & server side</span>
+            renduthukum use panalam.
+          </li>
+        </ul>
+      </section>
+      <!-- what is js end here -->
+
+      <!-- History of js start here -->
+      <section>
+        <h2>History of JavaScript</h2>
+        <ul>
+          <li>
+            Already sona matri anda kaalathula verum HTML & CSS vechi static web
+            page tha use panithu irundhanga.
+          </li>
+          <li>
+            So, in <span class="important-words">1995</span> la, a single person
+            <span class="important-words">Brendan Eich</span> a programmer at
+            Netscape (browser) developed a
+            <span class="important-words">JavaScript</span> adhuvum verum 10
+            days la.
+          </li>
+          <li>
+            Inda language peru <span class="important-words">Mocha</span> adhuku
+            aparam <span class="important-words">Livescript</span> nu change
+            pananaga.
+          </li>
+          <li>
+            At the time, JAVA rombo famous ah irunduchi so livescript adhae
+            matri famous aganum nu Netscape manager JAVA name include pani
+            JavaScript nu change panithanga. Matha padi
+            <span class="important-words">JAVA &NotEqual; JavaScript.</span>
+          </li>
+          <li>
+            Netscape ku competitor ah Internet Explore irundhanga avanga
+            <span class="important-words">JScript</span>
+            use panithu irundha.
+          </li>
+          <li>
+            Oru point la, Netscape use pandra user, IE odha content la view pana
+            mudiyala, adhae matri IE use pandra user, Netscape odha content view
+            pani paka mudiyala. Rendu perum avanga website la best viewed in IE
+            (or) best viewed in Netscape display pana start panithanga like this
+            👇
+          </li>
+          <div class="image-wrapper">
+            <img
+              src="./assets/images/best-viewed.jpg"
+              alt="best-viewed"
+              style="height: 200px"
+            />
+          </div>
+          <li>
+            Adhuvum ilama apo javascript la
+            <span class="important-words">syntax</span> laaium sari and
+            <span class="important-words">features</span> laaium sari enda
+            vidhamana standard
+            <span class="important-words">maintain panala.</span>
+          </li>
+          <li>
+            Inda problem solve pana rendu perum sendu
+            <span class="important-words">Technical Committe #39 (TC39)</span>
+            onnu assign pani inda language
+            <span class="important-words"
+              >cross-platform, general purpose language</span
+            >
+            and
+            <span class="important-words"
+              >vendor neutral scripting language</span
+            >
+            ah mathanum nu idhuku nu oru standard create pananaga.
+          </li>
+          <li>
+            Anda standard, in
+            <span class="important-words"
+              >1997 JavaScript 1.1 version European Computer Manufactures
+              Association (ECMA)</span
+            >
+            ku oru propsal ah kuduthanga.
+          </li>
+          <li>
+            Adhuku aparam javascript language oru pudu standard odha
+            <span class="important-words">ECMA-262</span> nu name odha release
+            panaga. Anda language both Netscape & Internet Explore renduthulaium
+            support panuchi. User ku rombo easy ah irunduchi web page view pani
+            paaka as well as for web developer like us 🤙
+          </li>
+        </ul>
+      </section>
+      <!-- History of js end here -->
+
+      <!-- versions of js start here -->
+      <section>
+        <h2>Versions of JavaScript</h2>
+        <div class="image-wrapper js-version">
+          <img src="./assets/images/js-version.jpg" alt="js-version" />
+        </div>
+      </section>
+      <!-- versions of js end here -->
+
+      <!-- features of js start here -->
+      <section>
+        <h2>Features of JavaScript</h2>
+        <ul>
+          <li>
+            <b>Cross-platform:</b> JavaScript ella OS laaium support panum such
+            as <span class="important-words">Windows, macOS, Linux,</span> etc.
+          </li>
+          <li>
+            <b>Object-Oriented:</b> JavaScript is an
+            <span class="important-words"
+              >Object Oriented programming language,</span
+            >
+            but adhu JAVA, C++ matri class based OOP language ila, it is
+            <span class="important-words">protype based OOP language.</span>
+          </li>
+          <li>
+            <b>Scripting language:</b> JavaScript
+            <span class="important-words"
+              >user vechithu irukura browser poruthu script la execute
+              agum.</span
+            >
+            Because, oru oru user odha browser la irukura
+            <span class="important-words"
+              >cookies, session and local storage</span
+            >
+            and avangalodha information poruthu avangaluku content display
+            panum.
+          </li>
+          <li>
+            <b>Dynamically typed:</b> Matha language matri idhula oru variable
+            la oru value store pananum na
+            <span class="important-words"
+              >anda value ena type nu mention pana theva ila</span
+            >
+            just
+            <span class="important-words">var, let and const keyword</span> use
+            panavae adhuvae dynamic nambo kudukura value enda data type nu kandu
+            pudichi edhuthukum.
+          </li>
+          <li>
+            <b>Case sensitive:</b> JavaScript is
+            <span class="important-words"
+              >Case sensitive programming language,</span
+            >
+            we will discuss it on later.
+          </li>
+          <li>
+            <b>Browser support:</b> JavaScript is
+            <span class="important-words">supported by all major browsers</span>
+            like Chrome, Firefox, Safari, etc.
+          </li>
+          <li>
+            <b>JIT compiled:</b> Just-In-Time compiler converts the
+            <span class="important-words">jS code to byte code.</span>
+          </li>
+          <li>
+            <b>Interpreted language:</b> JavaScript
+            <span class="important-words"
+              >byte code la machine code ah convert pana interpreter use
+              agum.</span
+            >
+          </li>
+        </ul>
+      </section>
+      <!-- features of js end here -->
+
+      <!-- run js start here -->
+      <section>
+        <h2>How to Run JavaScript</h2>
+        <p>JavaScript run pana basic ah rendu visiyam theva padhum...</p>
+        <ol>
+          <li>
+            <span class="important-words">Text editor: </span> It is used to
+            write your code. Many text editors iruku like Visual Studio Code,
+            Sublime text, Atom, Notepad++, etc.
+          </li>
+          <li>
+            <span class="important-words">Browser: </span> Browser tha
+            javascript code execute panum and don't worry enda browser use
+            pandrathu nu because javascript ella modern browser la work agum.
+          </li>
+        </ol>
+      </section>
+      <!-- run js end here -->
+
+      <!-- Js engine start here -->
+      <section>
+        <h2>JavaScript Engine</h2>
+        <ul>
+          <li>
+            Oru javascript code execute aaga
+            <span class="important-words">javascript engine</span> theva padhum
+            javascript engine illama javascript code execute agadhu. Nambo use
+            pandra browser la javscript engine embedded pani vechi irupanga.
+          </li>
+          <li>
+            Enda machine javascript engine vechi iruko anda machine aala
+            javascript code execute pana mudium.
+          </li>
+          <li>
+            Inda engine ku innoru name
+            <span class="important-words">"JavaScript virtual machine"</span>
+          </li>
+          <li>
+            Oru oru browser oru oru javascript engine use panum like Chrome ku
+            <span class="important-words">V8 engine,</span> Firefox use
+            <span class="important-words">SpiderMonkey,</span> IE use
+            <span class="important-words">Chakra.</span>
+          </li>
+        </ul>
+        <p><b>How does JavaScript Engine work?</b></p>
+        <p>
+          JavaScript create pana apo adhu
+          <span class="important-words">interpreted language</span> ah tha
+          irunduchi because javascript engine interpreter use pani code execute
+          panuchi but, now-a-days all modern browsers oru javascript code
+          execute pana
+          <span class="important-words"
+            >interpreter & JIT(just-in-time) compiler use pani execute
+            panudhu.</span
+          >
+          Step by step ah pakulam epdi js code execute agudhu nu
+        </p>
+        <ul>
+          <li>
+            <b>Parsing: </b>JavaScript engine nambo eluzhudura script la padichi
+            oru tree matri form panum adhuku peru
+            <span class="important-words">AST(Abstract Syntax Tree)</span> nu
+            soluvanga idhuku peru tha
+            <span class="important-words">parsing.</span>
+          </li>
+          <li>
+            <b>Interpretation: </b>Then interpreter ena panum na anda AST ya
+            <span class="important-words">byte code ah convert panum.</span>
+          </li>
+          <li>
+            <b>JIT: </b>JIT compiler ena panum na evolo ku evolo code
+            <span class="important-words">optimize</span>
+            pana mudiumo avolo ku avolo optimize panum.
+          </li>
+          <li>
+            <b>Execution: </b> Finally, JIT optimized pana code execute panum.
+          </li>
+          <p>
+            <b>Note: </b>
+            <span class="important-words"
+              >Different JS engine has different architectures.</span
+            >
+            For example, Chrome has V8 engine adhu vechithu irukura compiler
+            name <span class="important-words">TurboFan,</span> Mozilla's has
+            SpiderMonkey engine nadhu vechithu irukura compiler name
+            <span class="important-words">JIT compiler.</span>
+          </p>
+          <div class="image-wrapper">
+            <img src="./assets/images/js-engine.png" alt="js-engine" />
+          </div>
+        </ul>
+      </section>
+      <!-- run js end here -->
+
+      <!-- Js can do start here -->
+      <section>
+        <h2>What JavaScript can do?</h2>
+        <ul>
+          <li>
+            JavaScript aala web page
+            <span class="important-words">content modify</span> pana mudium,
+            adhu odha <span class="important-words">styles change</span> pana
+            mudium and oru
+            <span class="important-words">new content add</span> kuda pana
+            mudium.
+          </li>
+          <li>
+            User odha events like mouse click pandrathu and keyboard la press
+            pandra ella <span class="important-words">events handle</span> pana
+            mudium.
+          </li>
+          <li>
+            JavaScript aala remote servers ku
+            <span class="important-words">request send pana mudium</span> for
+            uploading and downloading of files.
+          </li>
+          <li>
+            JavaScript aala client side la data va store pana mudium adhuku peru
+            tha <span class="important-words">local storage</span> nu soluvanga
+            (we will discuss it on later).
+          </li>
+        </ul>
+      </section>
+      <!-- Js can do end here -->
+
+      <!-- Js cannot do start here -->
+      <section>
+        <h2>What JavaScript cannot do?</h2>
+        <ul>
+          <li>
+            JavaScript aala oru system odha
+            <span class="important-words"
+              >hard disk la irukura files access pana mudiyadhu.</span
+            >
+            Oru user files webpage la upload pananum na mudium but without user
+            permission javascript cannot access user data.
+          </li>
+          <li>
+            Browser la nambo neriya tab simultaneous ah open pani irupom, apo
+            <span class="important-words"
+              >oru tab la irukura javascript innoru tab access pana
+              mudiyadhu.</span
+            >
+          </li>
+          <li>
+            Idhula ellam security reason kaaga javascript limit pani vechi
+            irukanga.
+          </li>
+        </ul>
+      </section>
+      <!-- Js cannot do end here -->
+    </main>
+
+    <footer>
+      <p>Made with 💖 | <span>webArtist</span></p>
+    </footer>
+    <!-- Custom script -->
+    <script src="./script.js"></script>
+  </body>
+</html>

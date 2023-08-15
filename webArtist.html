@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>webArtist | JavaScript</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon " href="./assets/images/logo.png" />
+    
+    <!-- Common css -->
+    <link rel="stylesheet" type="text/css" href="./assets/commonStyle.css" />
+
+    <!-- Custom css -->
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/helloWorld.css" /> -->
+
+    <!-- Code snippet css -->
+    <link rel="stylesheet" href="./assets/codeSnippet.css">
+
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">webArtist</div>
+      <div class="menu">
+        <label for="menu"><i class="fa-solid fa-bars"></i></label>
+      </div>
+      <input type="checkbox" id="menu" />
+
+      <aside>
+        <p>Topics</p>
+        <ul>
+          <li><a href="./overview.html">Overview</a></li>
+          <li><a href="./webArtist.html">webArtist</a></li>
+          <li><a href="./variables.html">Variable</a></li>
+          <li><a href="./Operator_Precedence.html">Operator Precedence</a></li>
+          <li><a href="./Arithmetic_Operator.html">Arithmetic Operator</a></li>
+        </ul>
+      </aside>
+    </header>
+
+    <main>
+      <!-- Hello world start here -->
+      <section>
+        <h2>Introduction to webArtist in JavaScript</h2>
+        <p>
+          Nenga enda programmer kita poi ungalodha first program ena nu ketinga
+          na, mostly ellarum <span class="important-words">Hello World</span> nu
+          tha soluvanga.
+        </p>
+        <p>
+          So, adhae matri nambalum ipo hello world epdi javascript la print
+          pandrathu nu paaka porom nambo different ah
+          <span class="important-words">webArtist</span> epdi print nu papom 🥰
+        </p>
+        <p><b>Where to write JS code?</b></p>
+        <p>
+          webArtist print pandrathuku munnadi js code enga eluzhudanum nu first
+          papom. Nenga enda text editor la vena JS code write panalam.
+        </p>
+        <p>
+          But i recommend to use
+          <span class="important-words">VS Code Editor</span> because adhula
+          neriya helpful ahna extension iruku and community support nala irukum.
+        </p>
+        <p>To download Visual Studio click here 👇</p>
+        <a
+          href="https://code.visualstudio.com/download"
+          class="btn"
+          target="_blank"
+          >Get Visual Studio</a
+        >
+      </section>
+      <!-- Hello world end here -->
+
+      <!-- How to insert js start here -->
+      <section>
+        <h2>How to insert JavaScript into an HTML page</h2>
+        <p>There are two ways to insert JavaScript program in HTML page.</p>
+        <ul>
+          <li>Internal JavaScript</li>
+          <li>External JavaScript</li>
+        </ul>
+        <h3>Internal JavaScript</h3>
+        <p>
+          Internal JavaScript use panum podu nambo HTML la direct ah
+          <span class="important-words">&lt;script&gt;</span> tag kula js code
+          la podhuvom.
+        </p>
+
+        <!-- code snippet -->
+        <div class="code-snippet">
+          <code>
+            <p class="doctype"><span>&lt;</span>!DCOTYPE html&gt;</p>
+            <p>
+              &lt;<span class="tag-color">html</span>
+              <span class="color-yellow">lang</span> =
+              <span class="color-green">"en"</span>&gt;
+            </p>
+            <p>&lt;<span class="tag-color">head</span>&gt;</p>
+            <p class="code-format">
+              &lt;<span class="tag-color">title</span>&gt;Internal
+              JavaScript&lt;<span class="tag-color">//title</span>&gt;
+            </p>
+            <p>&lt;<span class="tag-color">/head</span>&gt;</p>
+            <p>&lt;<span class="tag-color">body</span>&gt;</p>
+
+            <p class="code-format">
+              <span class="html-comment">&lt;!--HTML code here--&gt;</span>
+            </p>
+
+            <div class="code-spacing code-format">
+              <p>&lt;<span class="tag-color">script</span>&gt;</p>
+              <p class="code-format">
+                <span class="html-comment">//JavaScript code here</span>
+              </p>
+              <p>&lt;<span class="tag-color">/script</span>&gt;</p>
+            </div>
+
+            <p>&lt;<span class="tag-color">/body</span>&gt;</p>
+            <p>&lt;<span class="tag-color">/html</span>&gt;</p>
+          </code>
+        </div>
+
+        <p>
+          Nambo <span class="important-words"> &lt;script&gt;</span> tag HTML la
+          enga vena podhalam but mostly
+          <span class="important-words">&lt;body&gt;</span> tag kula or
+          <span class="important-words">&lt;head&gt;</span> tag kula podhuvanga
+          rendhuthukum neriya difference iruku.
+        </p>
+
+        <p><b>Placing script in head tag</b></p>
+
+        <!-- code snippet -->
+        <div class="code-snippet">
+          <code>
+            <p class="doctype"><span>&lt;</span>!DCOTYPE html&gt;</p>
+            <p>
+              &lt;<span class="tag-color">html</span>
+              <span class="color-yellow">lang</span> =
+              <span class="color-green">"en"</span>&gt;
+            </p>
+            <p>&lt;<span class="tag-color">head</span>&gt;</p>
+            <p class="code-format">
+              &lt;<span class="tag-color">title</span>&gt;Script in
+              Head&lt;<span class="tag-color">/title</span>&gt;
+            </p>
+            <p class="code-format">
+              &lt;<span class="tag-color"
+                >script <span class="color-yellow">src</span> =
+                <span class="color-green">"script.js"</span> </span
+              >&gt;&lt;<span class="tag-color">/script</span>&gt;
+            </p>
+
+            <p>&lt;<span class="tag-color">/head</span>&gt;</p>
+            <p>&lt;<span class="tag-color">body</span>&gt;</p>
+            <p class="code-format">
+              &lt;<span class="tag-color">h1</span>&gt;webArtist&lt;<span
+                class="tag-color"
+                >/h1</span
+              >&gt;
+            </p>
+
+            <p>&lt;<span class="tag-color">/body</span>&gt;</p>
+            <p>&lt;<span class="tag-color">/html</span>&gt;</p>
+          </code>
+        </div>
+
+        <p>
+          <span class="important-words">&lt;script&gt;</span> tag head kula use
+          panum podhu code execute agum podu first
+          <span class="important-words">&lt;script&gt;</span> tag read pani
+          execute pana piragu tha html content display agum. Imagine that js
+          code rombo adigam ah irukum podhu website loading time rombo adigam
+          agum, html code display agurathukum late agum so, users experience
+          affect panum.
+        </p>
+        <p>
+          It is not good practice to place
+          <span class="important-words">&lt;script&gt;</span> tag inside head
+          tag.
+        </p>
+
+        <p><b>Placing script at the end of the body tag</b></p>
+        <p>
+          Previous method la irukura issue solve pana tha mostly ella developers
+          <span class="important-words">&lt;script&gt;</span> tag body kula use
+          panuvanga.
+        </p>
+        <p>
+          Next, <span class="important-words">&lt;body&gt;</span> tag kula use
+          pananum nu solitha but
+          <span class="important-words">&lt;body&gt;</span> tag kula enga
+          podrathu nu doubt vanda, as i said HTML content display ahna piragu
+          <span class="important-words">&lt;script&gt;</span> tag execute achi
+          na loading time konjam kami agum at the same time user experience
+          affect agadhu.
+        </p>
+        <p>
+          So, i recommend to use
+          <span class="important-words">&lt;script&gt;</span> tag inside
+          <span class="important-words">&lt;body&gt;</span> tag before body tag
+          ends like this 👇
+        </p>
+
+        <!-- code snippet -->
+        <div class="code-snippet">
+          <code>
+            <p class="doctype"><span>&lt;</span>!DCOTYPE html&gt;</p>
+            <p>
+              &lt;<span class="tag-color">html</span>
+              <span class="color-yellow">lang</span> =
+              <span class="color-green">"en"</span>&gt;
+            </p>
+            <p>&lt;<span class="tag-color">head</span>&gt;</p>
+            <p class="code-format">
+              &lt;<span class="tag-color">title</span>&gt;Script in
+              Head&lt;<span class="tag-color">/title</span>&gt;
+            </p>
+
+            <p>&lt;<span class="tag-color">/head</span>&gt;</p>
+            <p>&lt;<span class="tag-color">body</span>&gt;</p>
+            <p class="code-format">
+              &lt;<span class="tag-color">h1</span>&gt;webArtist&lt;<span
+                class="tag-color"
+                >/h1</span
+              >&gt;
+            </p>
+
+            <p class="code-format">
+              &lt;<span class="tag-color"
+                >script <span class="color-yellow">src</span> =
+                <span class="color-green">"script.js"</span> </span
+              >&gt;&lt;<span class="tag-color">/script</span>&gt;
+            </p>
+            <p>&lt;<span class="tag-color">/body</span>&gt;</p>
+            <p>&lt;<span class="tag-color">/html</span>&gt;</p>
+          </code>
+        </div>
+
+        <h3>External JavaScript</h3>
+        <p>
+          JavaScript la code odha lines increase aagum podhu adha maintain
+          pandrathu rombo kastam ah irukum. So, adhukaga nambo thani ah
+          javascript file maintain pana code maintain pandrathuku, code
+          padikurathukum and error solve pandrathukum easy ah irukum.
+        </p>
+        <p>
+          External javascript file epdi create pandrathu nu paatha nambo normal
+          ah file create pandra matri create panithu file odha name<span
+            class="important-words"
+            >.js</span
+          >
+          nu pothu save pananum.
+        </p>
+        <p>
+          <span class="important-words">.js</span> vandu javascript odha
+          extension.
+        </p>
+        <p>
+          For example, <span class="important-words">script.js</span> idhula
+          script vandu file name .js vandhu javascript odha extension.
+        </p>
+        <p>
+          Ipo JavaScript file create pani achi adha epdi HTML la link pandrathu
+          na like this 👇
+        </p>
+
+        <!-- code snippet -->
+        <div class="code-snippet">
+          <code>
+            <p>
+              &lt;<span class="tag-color"
+                >script <span class="color-yellow">src</span> =
+                <span class="color-green">"script.js"</span> </span
+              >&gt;&lt;<span class="tag-color">/script</span>&gt;
+            </p>
+          </code>
+        </div>
+        <p>
+          Idhula <span class="important-words">src</span> attribute la the
+          javascript file odha path mention panuvom.
+        </p>
+      </section>
+      <!-- How to insert js end here -->
+
+      <!-- 3 ways to print webArtist start here -->
+      <section>
+        <h2>3 Ways to print webArtist in JavaScript</h2>
+        <h3>Using console.log ()</h3>
+        <p>
+          <span class="important-words">console.log()</span> is a function used
+          to log a message in console.
+        </p>
+        <p>
+          Program la function na oru input vangi process pani output kudukuradhu
+          tha function nu soluvanga.
+        </p>
+        <p>
+          For example, real world la ipo marriage function edhuthukithom na anda
+          function epdi la irukanum nu nambo decide panuvom and adhuku ahna
+          velai la panuvom.
+        </p>
+        <p>
+          Nambo oruthar aala marriage function pana mudiyathu so adhuku nu oru
+          wedding planner choose panuvom avanga kita nambo inda matri la
+          function nadakanum nu soluvom adhu tha
+          <span class="important-words">input</span> adhu process pandrathavanga
+          tha wedding planner avnaga tha inda scenario la
+          <span class="important-words">function</span> nambo sona matri
+          decorate pani kudurathu tha
+          <span class="important-words">output</span>.
+        </p>
+
+        <div class="image-wrapper">
+          <img
+            src="./assets/images/function.png"
+            alt="function"
+            style="height: 80px"
+          />
+        </div>
+
+        <p>
+          Ipo nambo <span class="important-words">console.log</span> use pani
+          <span class="important-words">webArtist</span> print panalam.
+        </p>
+
+        <div class="code-snippet">
+          <code>
+            <p>&lt;script&gt;</p>
+            <p class="code-format">
+              <span class="color-yellow">console</span>.log(<span
+                class="color-green"
+                >"webArtist"</span
+              >);
+            </p>
+            <p>&lt;/script&gt;</p>
+          </code>
+        </div>
+
+        <p>
+          To see this output unga HTML file browser la open panunga and mukiyam
+          ah mela irukura script html file include pani irukanum.
+        </p>
+        <p>
+          Browser la open pana piragu press
+          <span class="important-words">F12</span> or
+          <span class="important-words">right-click and select inspect</span>
+          developer tools open agum anga elements tab pakathula
+          <span class="important-words">console</span> tab click panunga, here
+          you can see your output.
+        </p>
+
+        <div class="image-wrapper">
+          <img
+            src="./assets/images/console.log.png"
+            alt="console"
+            style="height: 150px"
+          />
+        </div>
+
+        <h3>Using document.write()</h3>
+        <p>
+          <span class="important-words">document.write()</span> idhuvum oru
+          function. But, <span class="important-words">console.log</span> use
+          pana developer tools la log pani tha paak mudium, idhuvae
+          <span class="important-words">document.write</span> function use pana
+          HTML document la write panalam.
+        </p>
+
+        <div class="code-snippet">
+          <code>
+            <p>&lt;script&gt;</p>
+            <p class="code-format">
+              <span class="color-yellow">document</span>.write(<span
+                class="color-green"
+                >"webArtist"</span
+              >);
+            </p>
+            <p>&lt;/script&gt;</p>
+          </code>
+        </div>
+
+        <p>
+          Idhu odha output paaka HTML file browser open panunga, inda script
+          unga HTML file la write panithu.
+        </p>
+
+        <div class="image-wrapper">
+          <img
+            src="./assets/images/document.write.png"
+            alt="document-write"
+            style="height: 100px"
+          />
+        </div>
+
+        <h3>Using alert()</h3>
+        <p>
+          <span class="important-words">alert()</span> same idhuvum oru
+          function, but inda function ena panum na HTML file load aguna odhane
+          oru pop up box open agum adhula nambo alert la ena message kudukuromo
+          anda message display agum.
+        </p>
+        <div class="code-snippet">
+          <code>
+            <p>&lt;script&gt;</p>
+            <p class="code-format">
+              alert(<span class="color-green">"webArtist"</span>);
+            </p>
+            <p>&lt;/script&gt;</p>
+          </code>
+        </div>
+        <p><b>Output 👇</b></p>
+        <div class="image-wrapper">
+          <img
+            src="./assets/images/alert.png"
+            alt="alert"
+            style="height: 150px"
+          />
+        </div>
+      </section>
+      <!-- 3 ways to print webArtist end here -->
+
+      <!-- javascript comments -->
+      <section>
+        <h2>JavaScript Comments</h2>
+        <p>JavaScript la comments edhuku use agudhu na, nambo eluzhudura code innoru developer edhuthu pathalum avangaluku puriyanum nu and nambo eluzhudhura code nambalukae sila time puriyadhu oru 1 or 2 day kalichi edhuthu partha so adhuku nambaluku puriyura matri eluzhudi vechikulam like notes matri. </p>
+        <p>Comments la irukura code la <span class="important-words">run agadhu</span> and nambo code comment pani kuda vechikulam testing pandra apo, javascript la 2 types of comments iruku.</p>
+        <h3>Single line comment</h3>
+        <p>Nambo eluzhudura comment ku munnadi rendu <span class="important-words">//</span> forward slash potha adhu tha single line comment. Oru line mathum comment pananum nu nenaicha idhu use panikulam.</p>
+        <div class="code-snippet">
+          <div><span class="color-yellow">console.</span>log <span class="color-green">("webArtist")</span>;</div>
+          <div class="html-comment">// This is single line comment this is not executed</div>
+        </div>
+        <h3>Multi-line comment</h3>
+        <p>Neriya line comment pananum na starting la <span class="important-words">/*</span> mudium podhu <span class="important-words">*/</span>.</p>
+        <div class="code-snippet">
+          <div><span class="color-yellow">console.</span>log <span class="color-green">("webArtist")</span>;</div>
+          <div class="html-comment">/* This is</div>
+          <div class="html-comment">multi-line comment.</div>
+          <div class="html-comment">This code is </div>
+          <div class="html-comment">not executed. */</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made with 💖 | <span>webArtist</span></p>
+    </footer>
+
+    <!-- Custom script -->
+    <script src="./script.js"></script>
+  </body>
+</html>

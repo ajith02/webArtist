@@ -1,0 +1,27 @@
+.course {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--light-grey);
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0px 10px 20px -10px rgba(50, 50, 93, 0.25),
+    0px 10px 20px -10px rgba(0, 0, 0, 0.3);
+}
+
+.html {
+  background-color: var(--light-voilet);
+}
+
+.css {
+  background-color: var(--light-yellow);
+}
+
+.js {
+  background-color: var(--light-green);
+}
+
+section .image img {
+  width: 80px;
+}

@@ -1,0 +1,253 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Comme&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /* Colors*/
+  --background: #f8f9fb;
+  --primary-color: #f6f9fd;
+  --text-color: #61738e;
+  --light-grey: rgb(233, 233, 233);
+  --black: #333333;
+  /* --light-black: #010101; */
+  --light-black: #1a2c47;
+  --white: #ffffff;
+  --blue: #13a5fa;
+  --border-left: rgb(179, 0, 88);
+  --border-color: #0b8484;
+  --light-pink: #fffef2;
+  --light-background: #edf7f6;
+  /* --light-blue: #F3FAFD; */
+  --light-voilet: #f8f6ff;
+  --light-yellow: #fffaec;
+  --light-green: #f6fdf4;
+  --table-color: rgb(220, 220, 220, 0.2);
+  /* Font size */
+  --lg-font-size: 2rem;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--background);
+  color: var(--black);
+  font-family: "Comme", sans-serif;
+}
+
+/* Header style here */
+header {
+  background-color: var(--background);
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header div {
+  padding: 1em;
+}
+
+.logo {
+  background: url(./images/logo.png) no-repeat;
+  background-size: contain;
+  height: 60px;
+  width: 100px;
+  color: var(--white);
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+/* Sidebar style here */
+aside {
+  position: fixed;
+  right: -100%;
+  top: 80px;
+  width: 250px;
+  height: 500px;
+  background-color: var(--border-color);
+  transition: right 1s linear;
+  box-shadow: 0px 10px 20px -10px rgba(50, 50, 93, 0.25),
+    0px 10px 20px -10px rgba(0, 0, 0, 0.3);
+}
+
+aside ul li {
+  list-style-type: none;
+}
+
+aside ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 0.5em 0.5em 0 1em;
+  color: var(--white);
+}
+
+aside p {
+  background-color: var(--light-background);
+  color: var(--black);
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-block: 0.5em;
+  margin-bottom: 1em;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input:checked + aside,
+input:focus + aside {
+  right: 0;
+}
+
+main {
+  width: 85%;
+  max-width: 650px;
+  margin: 5em auto 2em;
+}
+
+section ul,
+section ol {
+  padding-left: 1em;
+}
+
+h1,
+h2 {
+  color: var(--light-black);
+  font-size: var(--lg-font-size);
+  letter-spacing: 1px;
+  margin-block: 1em 0.5em;
+}
+
+h1::after,
+h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  border-bottom: 2px solid var(--border-color);
+  padding-left: 1px;
+}
+
+h3 {
+  color: var(--light-black);
+  margin-block: 1em 0.5em;
+}
+
+section p,
+section ul li,
+section ol li,
+section article {
+  line-height: 1.5;
+  padding-block: 0.5em;
+}
+
+section article {
+  padding-bottom: 0;
+}
+
+/* Image style here */
+.image-wrapper {
+  margin-inline: auto;
+  width: 300px;
+  padding-block: 1em;
+}
+
+.image-wrapper img {
+  width: 280px;
+}
+
+.important-words {
+  color: var(--border-left);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.9em;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 1em;
+  margin-block: 0.5em;
+}
+
+/* Table style here */
+.responsive-table {
+  overflow: auto;
+}
+
+table {
+  margin-inline: auto;
+  text-align: center;
+  border-radius: 15px;
+}
+
+table, th, td {
+  border: 1px solid var(--light-grey);
+  border-spacing: 0;
+  /* border-collapse: collapse; */
+  /* padding: .8em; */
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--table-color);
+}
+
+th,td {
+  border: none;
+  padding: .8em;
+}
+
+/* Footer style here */
+footer p {
+  text-align: center;
+  padding-block: 1em;
+}
+
+footer p span {
+  color: var(--blue);
+}
+
+/* Media query */
+
+/* For tablets */
+@media screen and (min-width: 758px) {
+  :root {
+    --lg-font-size: 2.5rem;
+  }
+
+  .js-version {
+    width: 650px;
+  }
+
+  .js-version img {
+    width: inherit;
+    height: 200px;
+  }
+}
+
+/* For desktop*/
+@media screen and (min-width: 1200px) {
+  .menu {
+    display: none;
+  }
+
+  aside {
+    left: 10px;
+  }
+
+  main {
+    padding-left: 3rem;
+  }
+}

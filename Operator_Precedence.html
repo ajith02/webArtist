@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Operator Precendence | JavaScript</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon " href="./assets/images/logo.png" />
+
+    <!-- Common css -->
+    <link rel="stylesheet" type="text/css" href="./assets/commonStyle.css" />
+
+    <!-- Code snippet css -->
+    <link rel="stylesheet" href="./assets/codeSnippet.css" />
+
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">webArtist</div>
+      <div class="menu">
+        <label for="menu"><i class="fa-solid fa-bars"></i></label>
+      </div>
+      <input type="checkbox" id="menu" />
+
+      <aside>
+        <p>Topics</p>
+        <ul>
+          <li><a href="./overview.html">Overview</a></li>
+          <li><a href="./webArtist.html">webArtist</a></li>
+          <li><a href="./variables.html">Variable</a></li>
+          <li><a href="./Operator_Precedence.html">Operator Precedence</a></li>
+          <li><a href="./Arithmetic_Operator.html">Arithmetic Operator</a></li>
+        </ul>
+      </aside>
+    </header>
+
+    <main>
+      <!-- Operator Precedence -->
+      <section>
+        <article>
+          <h1>What is Operator Precedence in JavaScript?</h1>
+          <p>
+            Operator precedence na maths la oru sum iruku adhula
+            <span class="important-words">+</span>,
+            <span class="important-words">-</span>, and
+            <span class="important-words">*</span> inda matri neriya calculation
+            nadakum podu adhula edhu first execute pananum nu theriyadhu so adha
+            execute pandrathu ku oru order use panuvanga.
+          </p>
+          <p>
+            Adhuku munnadi <span class="important-words">Operator</span> kum
+            <span class="important-words">Operands</span> kum ena difference nu
+            pakulam. Ipo <span class="important-words">a + b</span> nu iruku na
+            adhula <span class="important-words">a</span> and
+            <span class="important-words">b</span> idhu tha
+            <span class="important-words">Operands</span> naduvula irukura
+            <span class="important-words">+</span> tha
+            <span class="important-words">Operator</span>.
+          </p>
+          <div class="code-snippet">
+            <div>
+              <span class="color-yellow">5</span>+<span class="color-yellow"
+                >3</span
+              >*<span class="color-yellow">20</span>
+            </div>
+          </div>
+          <p>Mela irukura code ipdium solve panalam like 👇</p>
+          <div class="code-snippet">
+            <div>
+              (<span class="color-yellow">5</span>+<span class="color-yellow"
+                >3</span
+              >)*<span class="color-yellow">20</span> => (<span
+                class="color-yellow"
+                >8</span
+              >)*<span class="color-yellow">20</span> =>
+              <span class="color-yellow">160</span>
+            </div>
+          </div>
+          <p>Or, ipdium solve panalam.</p>
+          <div class="code-snippet">
+            <div>
+              <span class="color-yellow">5</span>+(<span class="color-yellow"
+                >3</span
+              >*<span class="color-yellow">20</span>) =>
+              <span class="color-yellow">5</span>+(<span class="color-yellow"
+                >60</span
+              >) => <span class="color-yellow">65</span>
+            </div>
+          </div>
+          <p>
+            Inda matri code ya oru oruthar oru oru matri solve pana ellarukum
+            different different answer varum ellarukum common ah answer varanum
+            nu tha inda operator precedence concept kondu vandanga.
+          </p>
+          <p>
+            Operator Precendence na oru line la neriya operator irukum podu enda
+            operator ku
+            <span class="important-words">higher precedence</span> ku iruko adha
+            <span class="important-words">higher priority</span> ah edhuthu
+            execute panu.
+          </p>
+        </article>
+
+        <!-- Rules for operator precedence -->
+        <article>
+          <h2>Rules of the Operator Precedence</h2>
+          <p>
+            JavaScript has a rule to execute lengthy mixed operator code. Idhula
+            neriya operator iruku but nambo simple ah neyabgam vechika
+            <span class="important-words"><b>"BODMAS".</b></span>
+          </p>
+          <ul>
+            <li>Bracket ()</li>
+            <li>Order (**)</li>
+            <li>Division (/)</li>
+            <li>Multiplication (*)</li>
+            <li>Addition (+)</li>
+            <li>Subtraction (-)</li>
+          </ul>
+          <p>
+            Inda order la tha execute agum code. Idhula neriya operator iruku we
+            will discuss later. Inda
+            <span class="important-words">BODMAS</span> ena soludhu na oru
+            equation la first <span class="important-words">bracket</span> iruku
+            ah nu pakum irunda adhu execute panum and then
+            <span class="important-words">order</span> pakum ilana next
+            <span class="important-words">division</span> pakum adhuvum ilana
+            <span class="important-words">multiplication</span> pakum adhuvum
+            ila na <span class="important-words">addition</span> pakum final ah
+            edhuvum ila na <span class="important-words">minus</span>.
+          </p>
+        </article>
+      </section>
+
+      <!-- Associativity -->
+      <section>
+        <article>
+          <h2>Associativity</h2>
+          <p>
+            Sila situation la javascript naala precedence vechi mathum oru
+            statement solve pana mudiyadhu. For example, ipo oru equation la
+            neriya operator irukum podu <span>precedence</span> vechi solve
+            panalam but what suppose,
+            <span class="important-words">same precedence</span> irukura
+            operator mathum vanda edha first panum?
+          </p>
+          <p><b>For example,</b></p>
+          <div class="code-snippet">
+            <div>
+              <span class="color-yellow">8</span>/<span class="color-yellow"
+                >4</span
+              >*<span class="color-yellow">2</span>
+            </div>
+          </div>
+          <p>
+            Mela irukura code la
+            <span class="important-words">division</span> and
+            <span class="important-words">multiplication</span> rendu operator
+            kum <span class="important-words">same precedence value</span>, apdi
+            irukum podu rendu method la solve panalam. First 👇
+          </p>
+          <div class="code-snippet">
+            <div>
+              <span class="color-yellow">8</span>/<span class="color-yellow"
+                >4</span
+              >*<span class="color-yellow">2</span> => (<span
+                class="color-yellow"
+                >8</span
+              >/<span class="color-yellow">4</span>)*<span class="color-yellow"
+                >2</span
+              >
+              => <span class="color-yellow">2</span>*<span class="color-yellow"
+                >2</span
+              >
+              => <span class="color-yellow">4</span>
+            </div>
+          </div>
+          <p>Or, ipdium solve panalam 👇</p>
+          <div class="code-snippet">
+            <div>
+              <span class="color-yellow">8</span>/<span class="color-yellow"
+                >4</span
+              >*<span class="color-yellow">2</span> =>
+              <span class="color-yellow">8</span>/(<span class="color-yellow"
+                >4</span
+              >*<span class="color-yellow">2</span>) =>
+              <span class="color-yellow">8</span>/<span class="color-yellow"
+                >8</span
+              >
+              => <span class="color-yellow">1</span>
+            </div>
+          </div>
+          <p>
+            Same question but difference answer inda problem solve pana tha
+            associativity inda concept kondu vandanga. Associativity na
+            statement enda direction la execute aganum
+            <span class="important-words">left to right</span> ah or
+            <span class="important-words">right to left</span> ah apdi decide
+            pandrathu adha tha technical word la associativity nu soldranga.
+          </p>
+
+          <!-- Left to right associativity -->
+          <article>
+            <h3>Left to Right Associativity</h3>
+            <p>
+              Mostly ella statement
+              <span class="important-words">left to right</span> tha follow
+              panum. Already nambo pathom adhae example tha kela pothu iruka
+              adhu left to right associativity follow panudhu.
+            </p>
+            <div class="code-snippet">
+              <div>
+                <span class="color-yellow">8</span>/<span class="color-yellow"
+                  >4</span
+                >*<span class="color-yellow">2</span> => (<span
+                  class="color-yellow"
+                  >8</span
+                >/<span class="color-yellow">4</span>)*<span
+                  class="color-yellow"
+                  >2</span
+                >
+                => <span class="color-yellow">2</span>*<span
+                  class="color-yellow"
+                  >2</span
+                >
+                => <span class="color-yellow">4</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Right to Left associativity -->
+          <article>
+            <h3>Right to Left Associativity</h3>
+            <p>In some secenario la <span class="important-words">right to left</span> associativity use pandra matri varum.</p>
+            <div class="code-snippet">
+                <div>x=y=z=25</div>
+            </div>
+            <p>Inda code right to left follow panum.</p>
+            <div class="code-snippet">
+                <div>z=25</div>
+                <div>y=z <span class="html-comment">// y=25</span></div>
+                <div>x=y <span class="html-comment">// x=25 inda matri the execute agum</span></div>
+            </div>
+            <p>I hope you have good understanding about operator precedence.</p>
+          </article>
+
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Made with 💖 | <span>webArtist</span></p>
+    </footer>
+  </body>
+</html>

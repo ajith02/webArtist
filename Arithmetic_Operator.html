@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arithmetic Operator | JavaScript</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon " href="./assets/images/logo.png" />
+
+    <!-- Common css -->
+    <link rel="stylesheet" type="text/css" href="./assets/commonStyle.css" />
+
+    <!-- Code snippet css -->
+    <link rel="stylesheet" href="./assets/codeSnippet.css" />
+
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">webArtist</div>
+      <div class="menu">
+        <label for="menu"><i class="fa-solid fa-bars"></i></label>
+      </div>
+      <input type="checkbox" id="menu" />
+
+      <aside>
+        <p>Topics</p>
+        <ul>
+          <li><a href="./overview.html">Overview</a></li>
+          <li><a href="./webArtist.html">webArtist</a></li>
+          <li><a href="./variables.html">Variable</a></li>
+          <li><a href="./Operator_Precedence.html">Operator Precedence</a></li>
+          <li><a href="./Arithmetic_Operator.html">Arithmetic Operator</a></li>
+        </ul>
+      </aside>
+    </header>
+
+    <main>
+      <!-- Arithmetic Operator overview start here -->
+      <section>
+        <article>
+          <h1>JavaScript Arithmetic Operators</h1>
+          <p>
+            <span class="important-words">Arithmetic operator</span> apdi na
+            adhu oru mathematical function adhu ena panum na two operands
+            edhuthu oru calculation panum. JavaScript
+            <span class="important-words">Arithmetic operator</span> kuda same
+            tha two <span class="important-words">operands</span> edhuthu adhuku
+            naduvula <span class="important-words">operator</span> use pananum
+            anda operator odha vela enavo adha base pani calculation nadakum.
+          </p>
+          <div class="code-snippet">
+            <div>
+              <span class="color-yellow">a</span> +
+              <span class="color-yellow">b</span>
+            </div>
+          </div>
+          <p>
+            Idhula <span class="important-words">a</span> and
+            <span class="important-words">b</span> vandu
+            <span class="important-words">operands</span>
+            <span class="important-words">+</span> vandu
+            <span class="important-words">operands</span> inga addition nadakum
+            because nambo use pani irukura operator ( + ). Idhu matri javascript
+            la neriya operators iruku adhu ena na
+          </p>
+        </article>
+
+        <!-- types of Operators -->
+        <article>
+          <div class="responsive-table">
+            <table>
+              <tr>
+                <th>Operator</th>
+                <th>Apdi na</th>
+              </tr>
+              <tr>
+                <td>+</td>
+                <td>Addition</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>Subtraction</td>
+              </tr>
+              <tr>
+                <td>*</td>
+                <td>Multiplication</td>
+              </tr>
+              <tr>
+                <td>**</td>
+                <td>Exponentiation (ES 2016)</td>
+              </tr>
+              <tr>
+                <td>/</td>
+                <td>Division</td>
+              </tr>
+              <tr>
+                <td>%</td>
+                <td>Modulus (Remainder)</td>
+              </tr>
+              <tr>
+                <td>++</td>
+                <td>Increment</td>
+              </tr>
+              <tr>
+                <td>--</td>
+                <td>Decrement</td>
+              </tr>
+            </table>
+          </div>
+        </article>
+      </section>
+      <!-- Arithmetic Operator overview end here -->
+
+      <!-- Addition Operator start here -->
+      <section>
+        <h2>Addition Operator</h2>
+        <p>
+          Inda javascript arithmetic operator rendu operands add panum by using
+          <span class="important-words">( + )</span> operator.
+        </p>
+        <div class="code-snippet">
+          <div>
+            <span class="tag-color">let</span> a =
+            <span class="color-yellow"> 22</span>;
+          </div>
+          <div>
+            <span class="tag-color">let</span> b =
+            <span class="color-yellow"> 28</span>;
+          </div>
+          <div>
+            <span class="tag-color">let</span> c =
+            <span class="color-yellow"> 10.2</span>;
+          </div>
+          <div>
+            <span class="color-yellow">console</span>.log( a + b + c );
+            <span class="html-comment">// output = 60.2</span>
+          </div>
+        </div>
+      </section>
+      <!-- Addition Operator end here -->
+
+      <!-- Subtraction Operator start here -->
+      <section>
+        <h2>Subtraction Operator</h2>
+        <p>
+          Inda operator odha vela rendu operands subtract pani vidrath by sing
+          <span class="important-words">( - )</span> operator.
+        </p>
+        <div class="code-snippet">
+          <div>
+            <span class="tag-color">let</span> a =
+            <span class="color-yellow"> 22</span>;
+          </div>
+          <div>
+            <span class="tag-color">let</span> b =
+            <span class="color-yellow"> 28</span>;
+          </div>
+          <div>
+            <span class="color-yellow">console</span>.log( a - b );
+            <span class="html-comment">// output = -6</span>
+          </div>
+        </div>
+      </section>
+      <!-- Subtraction Operator end here -->
+
+      <!-- Multiplication Operator start here -->
+      <section>
+        <h2>Multiplication Operator</h2>
+        <p>
+          Normal ah maths la epdi rendu number multiply pandramo adhu matri tha
+          idhulaium rendu number multiply panalam but javascript la multiply
+          pandrathuku <span class="important-words">( * )</span> inda symbol use
+          pananum.
+        </p>
+        <div class="code-snippet">
+          <div>
+            <span class="tag-color">let</span> a =
+            <span class="color-yellow"> 5</span>;
+          </div>
+          <div>
+            <span class="tag-color">let</span> b =
+            <span class="color-yellow"> 2</span>;
+          </div>
+          <div>
+            <span class="color-yellow">console</span>.log( a * b );
+            <span class="html-comment">// output = 10</span>
+          </div>
+        </div>
+      </section>
+      <!-- Multiplication Operator end here -->
+
+      <!-- Division Operator start here -->
+      <section>
+        <h2>Division Operator</h2>
+        <p>
+          JavaScript left operand ya right operand odha value vechi divide panum
+          by using <span class="important-words">( / )</span> operator.
+          JavaScript rendu number divide panum podu adhu odha
+          <span class="important-words">quotient</span> value tha show panum.
+        </p>
+        <div class="code-snippet">
+          <div>
+            <span class="tag-color">let</span> a =
+            <span class="color-yellow"> 6</span>;
+          </div>
+          <div>
+            <span class="tag-color">let</span> b =
+            <span class="color-yellow"> 2</span>;
+          </div>
+          <div>
+            <span class="color-yellow">console</span>.log( a / b );
+            <span class="html-comment">// output = 3</span>
+          </div>
+        </div>
+      </section>
+      <!-- Division Operator end here -->
+
+      <!-- Modulus Operator start here -->
+      <section>
+        <h2>Modulus Operator</h2>
+        <p>
+          Modulus operator same tha division tha nadakum but idhula
+          <span class="important-words">remainder</span> show panum.
+        </p>
+        <div class="code-snippet">
+          <div>
+            <span class="tag-color">let</span> a =
+            <span class="color-yellow"> 5</span>;
+          </div>
+          <div>
+            <span class="tag-color">let</span> b =
+            <span class="color-yellow"> 2</span>;
+          </div>
+          <div>
+            <span class="color-yellow">console</span>.log( a % b );
+            <span class="html-comment">// output = 1</span>
+          </div>
+        </div>
+      </section>
+      <!-- Modulus Operator end here -->
+
+      <!-- Exponentiation Operator start here -->
+      <section>
+        <h2>Exponentiation Operator</h2>
+        <p>
+          Inda javascript operator odha vela ena na left side irukura operand ya
+          right side operand la ena number kuduthu irukumo atha time multiply
+          panum. Inda operator use pana javascript la
+          <span class="important-words">( ** )</span> inda operator use pananum.
+        </p>
+        <div class="code-snippet">
+          <div>
+            <span class="tag-color">let</span> a =
+            <span class="color-yellow"> 5</span>;
+          </div>
+          <div>
+            <span class="tag-color">let</span> b =
+            <span class="color-yellow"> 2</span>;
+          </div>
+          <div>
+            <span class="color-yellow">console</span>.log( a ** b );
+            <span class="html-comment">// ( 5 ** 2 ) => output = 10</span>
+          </div>
+        </div>
+        <p>
+          Mela irukura code la left side operand 5 nu iruku anda operand ya
+          right side operand 2 nu iruku so 5 nu irukura number ya 2 times
+          multiply pananum.
+        </p>
+      </section>
+      <!-- Exponentiation Operator end here -->
+
+      <!-- Increment Operator start here -->
+      <section>
+        <h2>Increment Operator</h2>
+        <p>
+          Inda javascript operator ena panum na nambo enda operand ku inda
+          operator use pandramo anda value odha
+          <span class="important-words">1</span> add pani viturum idhu tha idhu
+          odha velai. Inda operator use pana
+          <span class="important-words">( ++ )</span> operator use pananum.
+          Idhula 2 types iruku
+        </p>
+        <ul>
+          <li>Post-increment</li>
+          <li>Pre-increment</li>
+        </ul>
+        <article>
+          <h3>Post Increment</h3>
+          <div class="code-snippet">
+            <div>
+              <span class="tag-color">let</span> a =
+              <span class="color-yellow"> 5</span>;
+            </div>
+            <div>
+              <span class="color-yellow">console</span>.log( a++ );
+              <span class="html-comment">// output = 5</span>
+            </div>
+            <div>
+              <span class="color-yellow">console</span>.log( a );
+              <span class="html-comment">// output = 6</span>
+            </div>
+          </div>
+          <p>
+            Mela irukura code la rendu console iruku first console la ena
+            nadakudhu na <span class="important-words">a</span> nu irukura
+            variable ya post-increment panudhu apdi na
+            <span class="important-words">5</span> kuda
+            <span class="important-words">1</span> add pani memory la vechikum
+            but anda console la current value 5 va tha kamikum. Idhae second
+            console la increment pana value va kamikum.
+          </p>
+        </article>
+        <article>
+          <h3>Pre-Increment</h3>
+          <div class="code-snippet">
+            <div>
+              <span class="tag-color">let</span> a =
+              <span class="color-yellow"> 5</span>;
+            </div>
+            <div>
+              <span class="color-yellow">console</span>.log( ++a );
+              <span class="html-comment">// output = 6</span>
+            </div>
+            <div>
+              <span class="color-yellow">console</span>.log( a );
+              <span class="html-comment">// output = 6</span>
+            </div>
+          </div>
+          <p>
+            But idhuvae same code pre-increment use pana first console la
+            <span class="important-words">5</span> value kuda
+            <span class="important-words">1</span> add agi
+            <span class="important-words">6</span> nu kamikum thirupi
+            <span class="important-words">a</span> va console pana kudha
+            increment ahna value tha kamikum.
+          </p>
+        </article>
+      </section>
+      <!-- Increment Operator end here -->
+
+      <!-- Decrement Operator start here -->
+      <section>
+        <h2>Decrement Operator</h2>
+        <p>
+          Inda javascript operator ena panum na nambo enda operand ku inda
+          operator use pandramo anda value odha
+          <span class="important-words">1</span> minus pani viturum idhu tha
+          idhu odha velai. Inda operator use pana
+          <span class="important-words">( -- )</span> operator use pananum.
+          Idhula 2 types iruku
+        </p>
+        <ul>
+          <li>Post-decrement</li>
+          <li>Pre-decrement</li>
+        </ul>
+        <article>
+          <h3>Post-decrement</h3>
+          <div class="code-snippet">
+            <div>
+              <span class="tag-color">let</span> a =
+              <span class="color-yellow"> 5</span>;
+            </div>
+            <div>
+              <span class="color-yellow">console</span>.log( a-- );
+              <span class="html-comment">// output = 5</span>
+            </div>
+            <div>
+              <span class="color-yellow">console</span>.log( a );
+              <span class="html-comment">// output = 4</span>
+            </div>
+          </div>
+          <p>
+            Idhulaium rendu console iruku first console la Post-decrement use
+            pani irukom so <span class="important-words">5</span> kuda
+            <span class="important-words">1</span> minus pani
+            <span class="important-words">4</span> nu memory la vechikum but
+            <span class="important-words">5</span> nu tha show panum. Second
+            console la decrement ahna value
+            <span class="important-words">4</span> ya tha show panum.
+          </p>
+        </article>
+        <article>
+          <h3>Pre-decrement</h3>
+          <div class="code-snippet">
+            <div>
+              <span class="tag-color">let</span> a =
+              <span class="color-yellow"> 5</span>;
+            </div>
+            <div>
+              <span class="color-yellow">console</span>.log( --a );
+              <span class="html-comment">// output = 4</span>
+            </div>
+            <div>
+              <span class="color-yellow">console</span>.log( a );
+              <span class="html-comment">// output = 4</span>
+            </div>
+          </div>
+          <p>
+            Idhula first console la pre-decrement use pani irukuradhu nala
+            <span class="important-words">5</span> va decrement pani
+            <span class="important-words">4</span> nu kamikum. Second console
+            laium same decrement ahna value tha show agum.
+          </p>
+        </article>
+      </section>
+      <!-- Decrement Operator end here -->
+
+      <!-- Unary Operator ( - ) start here -->
+      <section>
+        <article>
+          <h2>Unary Negation ( - ) operator</h2>
+          <p>
+            Inda javascript operator enda calculation panadhu its just convert
+            the <span class="important-words">+</span> number to
+            <span class="important-words">-</span> number. It also convert a
+            string into
+            <span class="important-words">float and integer</span> values,
+            Boolean values true, false ,NULL into
+            <span class="important-words">number</span>. Enda value la inda
+            operator use pananumo adhuku munnadi
+            <span class="important-words">( - )</span> operator use pananum.
+          </p>
+          <div class="code-snippet">
+            <div>
+              <span class="tag-color">const</span> x =
+              <span class="color-yellow">3</span> ;
+            </div>
+            <div>
+              <span class="tag-color">const</span> y =
+              <span class="color-yellow">-x</span> ;
+            </div>
+            <div>
+              <span class="color-yellow">console.</span>log( y ) ;
+              <span class="html-comment">// output = -3</span>
+            </div>
+            <div class="code-spacing">
+              <div>
+                <span class="tag-color">const</span> a =
+                <span class="color-green">"0xFF"</span>
+              </div>
+              <div>
+                <span class="color-yellow">console.</span>log( a );
+                <span class="html-comment">// output = -255</span>
+              </div>
+            </div>
+            <div class="code-spacing">
+              <div>
+                <span class="tag-color">const</span> b =
+                <span class="color-green">"-123e-5"</span>
+              </div>
+              <div>
+                <span class="color-yellow">console.</span>log( b );
+                <span class="html-comment">// output = -0.00123</span>
+              </div>
+            </div>
+            <div>
+              <div>
+                <span class="color-yellow">console.</span>log(-<span
+                  class="doctype"
+                  >true</span
+                >); <span class="html-comment">// -1</span>
+              </div>
+              <div>
+                <span class="color-yellow">console.</span>log(-<span
+                  class="doctype"
+                  >null</span
+                >); <span class="html-comment">// -0</span>
+              </div>
+            </div>
+          </div>
+          <p>
+            First console la <span class="important-words">y</span> ku
+            <span class="important-words">x</span> odha value
+            <span class="important-words">3</span> plus
+            <span class="important-words">-</span> apply agi
+            <span class="important-words">-3</span> nu show agum. Second console
+            la <span class="important-words">a</span> ku kuduthu irukura value
+            hexadecimal value so adhu
+            <span class="important-words">integer</span> ah convert agum.
+          </p>
+        </article>
+      </section>
+      <!-- Unary Operator ( - ) end here -->
+
+      <!-- Unary Operator ( + ) start here -->
+      <section>
+        <h2>Unary Plus ( + ) Operator</h2>
+        <p>
+          Unary ( - ) operator matri Unary ( + ) operator enda vida calculation
+          panadhu it tries to convert as unary ( - ) operator but it add ( + )
+          before the value.
+        </p>
+        <div class="code-snippet">
+          <div>
+            <span class="tag-color">const</span> x =
+            <span class="color-yellow">1</span> ;
+          </div>
+          <div>
+            <span class="tag-color">const</span> y =
+            <span class="color-green">"2"</span> ;
+          </div>
+          <div>
+            <span class="color-yellow">console.</span>log(+x);
+            <span class="html-comment">// 1</span>
+          </div>
+          <div>
+            <span class="color-yellow">console.</span>log(+y);
+            <span class="html-comment">// 2</span>
+          </div>
+          <div>
+            <span class="color-yellow">console.</span>log(+<span class="doctype"
+              >true</span
+            >); <span class="html-comment">// 1</span>
+          </div>
+          <div>
+            <span class="color-yellow">console.</span>log(+<span class="doctype"
+              >false</span
+            >); <span class="html-comment">// 0</span>
+          </div>
+          <div>
+            <span class="color-yellow">console.</span>log(+<span class="doctype"
+              >null</span
+            >); <span class="html-comment">// 0</span>
+          </div>
+        </div>
+      </section>
+      <!-- Unary Operator ( + ) end here -->
+
+      <!-- Working with different datatypes start here -->
+      <section>
+        <h2>Working of Math Operators with Different Data Types</h2>
+        <p>
+          Math operator different data types kuda epdi work agudhu nu pakulam.
+        </p>
+        <article>
+          <h3>
+            <span class="important-words">+</span> operator
+          </h3>
+          <ul>
+            <li>
+              <b>Numbers with Number</b> rendu operands number ah irukum podu,
+              <span class="important-words">+</span> operator add panum.
+              <div class="code-snippet">
+                <div>
+                  <span class="tag-color">let</span> value =
+                  <span class="color-yellow">10</span> +
+                  <span class="color-yellow">20</span> ;
+                </div>
+                <div>
+                  <span class="color-yellow">console.</span>log(value) ;
+                  <span class="html-comment">// output => 30</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <b>Number with String</b> ipo rendu operand irukum podu adhula oru
+              operand string and innoru operand number ah irukum podu
+              <span class="important-words">+</span> operator ena panum na
+              number ya string ah change panidhum so number pakathula string
+              vandurum idhuku peru tha technical ah
+              <span class="important-words">concatenation</span> nu soluvanga.
+              <div class="code-snippet">
+                <div>
+                  <span class="tag-color">let</span> value =
+                  <span class="color-yellow">10</span> +
+                  <span class="color-green">"webArtist"</span> ;
+                </div>
+                <div>
+                  <span class="color-yellow">console.</span>log(value) ;
+                  <span class="html-comment">// output => 10webArtist</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <b>Number with boolean</b> arithmetic operations panum podu
+              boolean <span class="important-words">true</span> vandu
+              <span class="important-words">1</span> ah convert ah agidhum and
+              <span class="important-words">false</span> vandu
+              <span class="important-words">0</span> ah convert agidhum.
+              <div class="code-snippet">
+                <div>
+                  <span class="tag-color">let</span> value =
+                  <span class="color-yellow">10</span> +
+                  <span class="doctype">true</span> ;
+                </div>
+                <div>
+                  <span class="color-yellow">console.</span>log(value) ;
+                  <span class="html-comment">// output => 11</span>
+                </div>
+                <div>
+                  <span class="tag-color">let</span> value_1 =
+                  <span class="color-yellow">10</span> +
+                  <span class="doctype">false</span> ;
+                </div>
+                <div>
+                  <span class="color-yellow">console.</span>log(value_1) ;
+                  <span class="html-comment">// output => 10</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <article>
+            <h3><span class="important-words">-</span> operator</h3>
+            <ul>
+              <li><b>Number with Number</b> rendu operand number ah irukum podu <span class="important-words">-</span> operator subtracts panidhum.
+              <div class="code-snippet">
+                <div><span class="tag-color">let</span> value = <span class="color-yellow">10</span> - <span class="color-yellow">20</span> ;</div>
+                <div><span class="color-yellow">console.</span>log(value) ; <span class="html-comment">// output => -10</span></div>
+              </div>
+            </li>
+            <li><b>Number with String</b>  ipo rendu operand irukum podu adhula oru operand number and oru operand string ah irukum podu enda vida arithmetic operation nadakadhu idhu ena nu show agum na <span class="important-words">Nan</span> nu show agum apdi na <span class="important-words">Not A Number</span> apdi na ( - ) use panum podu different operands la number ah javascript consider panadhu because ( + ) mathum tha concatenation nadakum.
+              <div class="code-snippet">
+                <div>
+                  <span class="tag-color">let</span> value =
+                  <span class="color-yellow">10</span> -
+                  <span class="color-green">"webArtist"</span> ;
+                </div>
+                <div>
+                  <span class="color-yellow">console.</span>log(value) ;
+                  <span class="html-comment">// output => NaN</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <b>Number with boolean</b> arithmetic operation panum podu boolean <span class="important-words">true</span> vandu <span class="important-words">1</span> ah convert agidhum and <span class="important-words">false</span> vandu <span class="important-words">0</span> ah convert agidhum. 
+              <div class="code-snippet">
+                <div>
+                  <span class="tag-color">let</span> value =
+                  <span class="color-yellow">10</span> -
+                  <span class="doctype">true</span> ;
+                </div>
+                <div>
+                  <span class="color-yellow">console.</span>log(value) ;
+                  <span class="html-comment">// output => 9</span>
+                </div>
+                <div>
+                  <span class="tag-color">let</span> value_1 =
+                  <span class="color-yellow">10</span> -
+                  <span class="doctype">false</span> ;
+                </div>
+                <div>
+                  <span class="color-yellow">console.</span>log(value_1) ;
+                  <span class="html-comment">// output => 10</span>
+                </div>
+              </div>
+            </li>
+            </ul>
+        </article>
+      </section>
+      <!-- Working with different datatypes end here -->
+    </main>
+
+    <footer>
+      <p>Made with 💖 | <span>webArtist</span></p>
+    </footer>
+  </body>
+</html>
