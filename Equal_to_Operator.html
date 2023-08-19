@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Difference Between == and === Operator | JavaScript</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon " href="./assets/images/logo.png" />
+
+    <!-- Common css -->
+    <link rel="stylesheet" type="text/css" href="./assets/commonStyle.css" />
+
+    <!-- Code snippet css -->
+    <link rel="stylesheet" href="./assets/codeSnippet.css" />
+
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">webArtist</div>
+      <div class="menu">
+        <label for="menu"><i class="fa-solid fa-bars"></i></label>
+      </div>
+      <input type="checkbox" id="menu" />
+
+      <aside>
+        <p>Topics</p>
+        <ul>
+          <li><a href="./overview.html">Overview</a></li>
+          <li><a href="./webArtist.html">webArtist</a></li>
+          <li><a href="./variables.html">Variable</a></li>
+          <li><a href="./Operator_Precedence.html">Operator Precedence</a></li>
+          <li><a href="./Arithmetic_Operator.html">Arithmetic Operator</a></li>
+          <li><a href="./Equal_to_Operator.html"> == and === Operator</a></li>
+        </ul>
+      </aside>
+    </header>
+
+    <main>
+      <!-- Difference Between == and === start here -->
+      <section>
+        <h1>Difference Between == and === in JavaScript</h1>
+        <p>
+          JavaScript la equality operator edhuku use panuvanga na rendu value
+          equal ah iruku ah illaya nu check pana use panuvanga. There are two
+          types of operator to check whether the value are equal are not.
+        </p>
+        <ol>
+          <li>
+            <span class="important-words">==</span> operator (Loose equality)
+          </li>
+          <li>
+            <span class="important-words">===</span> operator (Strict equality)
+          </li>
+        </ol>
+        <p>
+          <b>==</b> ena panum na rendu value same ah iruku ah illaya nu check
+          panum. <b>===</b> rendu visiyam panum, first rendu operand odha
+          datatype same ah nu check panum adhu true ah va irunda next rendu
+          operand odha value true ah nu check panum so anga ena result varudho
+          adhu tha display agum, suppose first stage la rendum same datatype ah
+          nu check panum podu false agiduchi na apovae execute pandrathu stop
+          panithu false nu show panidhum next stage value check pana pogadhu.
+        </p>
+        <p>
+          Inda renduthukum main ah ena difference na
+          <span class="important-words">==</span> operator, operand odha value
+          va <span class="important-words">type conversion</span> panum before
+          check. But <span class="important-words">===</span> nambo ena datatype
+          la kudukuromo adhae datatype la check panum.
+        </p>
+        <p>
+          == and === enda operator use panalum adhu odha return value (output)
+          onnu <span class="important-words">true</span> ila
+          <span class="important-words">false</span> idhu renduthula edhana onnu
+          tha varum.
+        </p>
+        <p>
+          <b>For example,</b> real time la unga social media login page la nenga
+          username and password kuduthu login panum podu adhu ena panum nenga
+          register panum podu ena username and password kuduthu irukingalo adhae
+          ipo login panum podu kuduthu irukingala rendu equal ah iruku ah nu
+          check panum so inda matri scenario la inda
+          <span class="important-words">equality</span> operator use agum.
+        </p>
+        <p>
+          <b>Note: </b> Suppose rendu value unequal ah nu check pananum na first
+          (<span class="important-words">==</span>) sign ku munnadi exclamation
+          (<span class="important-words">!</span>) mark use paninga na adhu
+          unequal (Not equal) operator ah maridhum. Same for
+          <span class="important-words">===</span>
+          <span class="important-words">!==</span> ipdi use pana adhu not equal
+          ah change agidhum.
+        </p>
+      </section>
+      <!-- Difference Between == and === start here -->
+
+      <!-- == and != operator start here -->
+      <section>
+        <h2>
+          What are <span class="important-words">==</span> and
+          <span class="important-words">!=</span> in JavaScript?
+        </h2>
+        <p>
+          Inda rendu operator value va compare pana use agudhu.
+          <span class="important-words">==</span> operator ena panum na type
+          conversion panum nu already sona adhu epdi na, For example, 👇
+        </p>
+        <div class="code-snippet">
+          <div>
+            <span class="tag-color">let</span> a =
+            <span class="color-yellow">5</span> ;
+          </div>
+          <div>
+            <span class="tag-color">let</span> b =
+            <span class="color-yellow">'5'</span> ;
+          </div>
+          <div>
+            <span class="color-yellow">console.</span>log(<span
+              class="color-green"
+              >a == b</span
+            >); <span class="html-comment">//true</span>
+          </div>
+        </div>
+        <p>
+          Mela irukura code la <span class="important-words">a</span> odha
+          datatype <span class="important-words">number</span>,
+          <span class="important-words">b</span> odha datatype
+          <span class="important-words">string</span>, ipo nambo
+          <span class="important-words">==</span> operator poradhu nala adhu ena
+          panum na epomey rendu value la left side irukuradhu tha important ah
+          consider panum so left side ena datatype la iruko anda datatype ah
+          right side datatype ya convert pani viturum idhu tha
+          <span class="important-words">==</span> operator odha first velai apdi
+          convert pani vita piragu tha value va check panum idha tha technical
+          ah <span class="important-words">type conversion</span> nu soldranga.
+        </p>
+        <p>
+          Mela irukura code la left side irukura datatype
+          <span class="important-words">number</span> right side irukura
+          datatype <span class="important-words">string</span> left side tha
+          important naala <span class="important-words">string</span> ya number
+          ah convert pani viturum adhuku aprm adhu odha value check pani execute
+          panum. Oru datatype la irundu innoru datatype ku convert pandrathu tha
+          <span class="important-words">type conversion</span>
+        </p>
+        <p>
+          <span class="important-words">!=</span> operator rendu value equal ah
+          ila na <span class="important-words">true</span> nu display panum same
+          ah irunda <span class="important-words">false</span>.
+          <span class="important-words">==</span> ku opposite tha
+          <span class="important-words">!=</span> operator. Let's see same
+          example for <span>!=</span>.
+        </p>
+        <div class="code-snippet">
+          <div>
+            <span class="tag-color">let</span> a =
+            <span class="color-yellow">5</span> ;
+          </div>
+          <div>
+            <span class="tag-color">let</span> b =
+            <span class="color-yellow">'5'</span> ;
+          </div>
+          <div>
+            <span class="color-yellow">console.</span>log(<span
+              class="color-green"
+              >a != b</span
+            >); <span class="html-comment">//false</span>
+          </div>
+        </div>
+        <p>
+          Idhula <span class="important-words">a</span> odha datatype
+          <span class="important-words">number</span>,
+          <span class="important-words">b</span> odha datatype
+          <span class="important-words">string</span> already sona matri
+          <span class="important-words">==</span> pothu irukuradhu nala first
+          <span class="important-words">string</span> ya
+          <span class="important-words">number</span> ah convert panidhum,
+          adhuku piragu <span class="important-words">console</span> la
+          <span class="important-words">a</span> vum
+          <span class="important-words">b</span> vum equal ah ila na
+          <span class="important-words">true</span> nu display agum but inda
+          scenario la equal ah iruku so
+          <span class="important-words">false</span> nu display panum.
+        </p>
+        <p>
+          <b>Simple trick,</b> <span class="important-words">!=</span> operator
+          na opposite nu sona na so, enga la
+          <span class="important-words">!=</span> operator pakuringalo anga
+          <span class="important-words">==</span> operator irunda ena output
+          varum nu yosichikonga adhuku opposite tha answer varum. Inda scenario
+          la <span class="important-words">==</span> operator irunda
+          <span class="important-words">true</span> varum so adhuodha opposite
+          tha <span class="important-words">false</span> adha answer.
+          <span class="important-words">!=</span> sila peruku confuse agum so
+          adha oru small trick but keep in mind
+          <span class="important-words">!=</span> epdi work agudhu nu
+          therinjikuradhu rombo mukiyam.
+        </p>
+      </section>
+      <!-- == and != operator end here -->
+
+      <!-- Behaviour of == start here when same datatype -->
+      <section>
+        <h3>
+          Behaviour of == and != operator when both operands are of the same
+          data types:
+        </h3>
+        <p>
+          Rendu operand odha datatype same ah irukum podu
+          <span class="important-words">==</span> and
+          <span class="important-words">!=</span> epdi work agudhu nu pakulam.
+        </p>
+        <ul>
+          <li>
+            Rendu operand odha datatype
+            <span class="important-words">number</span> ah irukum podu adhu odha
+            value same ah irunduchi na
+            <span class="important-words">true</span> nu display agum apdi ila
+            na <span class="important-words">false</span> nu display agum.
+            <div class="code-snippet">
+              <div>
+                <span class="tag-color">let</span> a =
+                <span class="color-yellow">10</span> ;
+              </div>
+              <div>
+                <span class="tag-color">let</span> b =
+                <span class="color-yellow">10</span> ;
+              </div>
+              <div>
+                <span class="tag-color">let</span> c =
+                <span class="color-yellow">-10</span> ;
+              </div>
+
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log(a == b);
+                </div>
+
+                <span class="html-comment">// output: true</span>
+              </div>
+
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log(a == c);
+                </div>
+                <span class="html-comment">//output: false</span>
+              </div>
+
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log(b != c);
+                </div>
+                <span class="html-comment">// output: true</span>
+              </div>
+            </div>
+            <p>
+              Idhula first console la both
+              <span class="important-words">a</span> and
+              <span class="important-words">b</span> odha value equal adhunala
+              <span class="important-words">true</span>, second console la
+              <span class="important-words">a</span> odha value
+              <span class="important-words">( +10 )</span>,
+              <span class="important-words">b</span> odha value
+              <span class="important-words">( -10 )</span> rendum vera vera
+              value so <span class="important-words">false</span>, third console
+              la <span class="important-words">!=</span> operator iruku trick
+              use paninga na != iruka vendiya idhathula == irunda false adhu
+              odha opposite <span class="important-words">true</span> nu varum.
+            </p>
+          </li>
+          <li>
+            Number kuda <span class="important-words">NaN</span> compare paninga
+            na <span>false</span> tha varum.
+            <div class="code-snippet">
+              <div>
+                <span class="tag-color">let</span> a =
+                <span class="color-yellow">10</span> ;
+              </div>
+              <div>
+                <span class="tag-color">let</span> b =
+                <span class="doctype">NaN</span> ;
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log(a == b);
+                </div>
+                <span class="html-comment">// output: false</span>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log(a != b);
+                </div>
+                <span class="html-comment">// output: true</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            Rendu operand odha datatype
+            <span class="important-words">string</span> ah irukum podu
+            <span class="important-words">true</span> nu display panum only if
+            first operand value odha each element (character), second operand
+            value odha each element (character) match ahna mathum tha
+            <span class="important-words">true</span> ilana false tha varum.
+            <div class="code-snippet">
+              <div>
+                <span class="tag-color">let</span> a =
+                <span class="color-green">'javascript</span> ;
+              </div>
+              <div>
+                <span class="tag-color">let</span> b =
+                <span class="color-green">'javascript'</span> ;
+              </div>
+              <div>
+                <span class="tag-color">let</span> b =
+                <span class="color-green">'javaScript'</span> ;
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log(a == b);
+                </div>
+                <span class="html-comment">// output: true</span>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log(a != c);
+                </div>
+                <span class="html-comment">// output: true</span>
+              </div>
+            </div>
+            <p>
+              Idhula first console la
+              <span class="important-words">a</span> odha value and
+              <span class="important-words">b</span> odha value vum exact ah
+              same ah iruku each and every letter so
+              <span class="important-words">true</span> nu varudhu. Second
+              console la <span class="important-words">!=</span> and idhathula
+              <span class="important-words">==</span> irunda
+              <span class="important-words">a</span> odha value kum
+              <span class="important-words">b</span> odha value kum oru
+              difference iruku adhu ena na
+              <span class="important-words">b</span> la irukura script starting
+              letter <span class="important-words">S</span> caps la iruku so
+              javaScript rendu vera vera value nu consider pani
+              <span class="important-words">false</span> nu kudukum inga
+              <span class="important-words">!=</span> irukuradhu nala false ku
+              opposite <span class="important-words">true</span> nu display
+              agum.
+            </p>
+          </li>
+          <li>
+            Rendu operands odha value
+            <span class="important-words">boolean</span> true ah irunduchi na
+            <span class="important-words">==</span> operator use panum podu
+            <span class="important-words">true</span> nu display panum oru vela
+            one true one false ah irunduchi na
+            <span class="important-words">false</span> nu display agum.<span
+              class="important-words"
+            >
+              !=</span
+            >
+            operator one true one false ah irunduchi na
+            <span class="important-words">true</span> nu display panum same ah
+            irunduchi na <span class="important-words">false</span> nu display
+            panum.
+            <div class="code-snippet">
+              <div>
+                <span class="tag-color">let</span> a =
+                <span class="doctype">false</span> ;
+              </div>
+              <div>
+                <span class="tag-color">let</span> b =
+                <span class="doctype">true</span> ;
+              </div>
+              <div>
+                <span class="tag-color">let</span> c =
+                <span class="doctype">true</span> ;
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( b == c) ;
+                </div>
+                <div><span class="html-comment">// output: true</span></div>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( b == a) ;
+                </div>
+                <div><span class="html-comment">// output: false</span></div>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( b != a) ;
+                </div>
+                <div><span class="html-comment">// output: true</span></div>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( b != c) ;
+                </div>
+                <div><span class="html-comment">// output: false</span></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Behaviour of == end here when same datatype -->
+
+      <!-- Behaviour of == start here when different datatype -->
+      <section>
+        <h3>
+          Behaviour of == and != operator when both operands are not of the same
+          type:
+        </h3>
+        <p>
+          Rendu operand odha datatype different ah irukum podu
+          <span class="important-words">==</span> and
+          <span class="important-words">!=</span> epdi work agudhu nu pakulam.
+        </p>
+        <ul>
+          <li>
+            Comparing <span class="important-words">string</span> and
+            <span class="important-words">number</span>
+            <div class="code-snippet">
+              <div>
+                <span class="tag-color">let </span>a =
+                <span class="color-yellow">10</span>;
+              </div>
+              <div>
+                <span class="tag-color">let </span>b =
+                <span class="color-green">'10'</span>;
+              </div>
+              <div>
+                <span class="tag-color">let </span>c =
+                <span class="color-green">'99'</span>;
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( a == b) ;
+                </div>
+                <div><span class="html-comment">//output: true</span></div>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( a == c) ;
+                </div>
+                <div><span class="html-comment">//output: false</span></div>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( a != c) ;
+                </div>
+                <div><span class="html-comment">//output: true</span></div>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( a != b) ;
+                </div>
+                <div><span class="html-comment">//output: false</span></div>
+              </div>
+            </div>
+            <p>
+              Idhula first console la
+              <span class="important-words">a</span> odha value number datatype
+              la iruku <span class="important-words">b</span> odha value string
+              datatype la iruku but
+              <span class="important-words">==</span> operator irukuradhu naala
+              string ya number datatype la convert panidhum adhuku piragu value
+              same ah irukuradhu naal
+              <span class="important-words">true</span> nu display agum. Second
+              console la same procedure tha panum but value different ah
+              irukuradhu nala <span class="important-words">false</span> nu
+              display agum.
+            </p>
+            <p>
+              Third and fourth console laaium same procedure tha follow panum
+              <span class="important-words">!=</span> operator epdi work agum oh
+              adhuku yetha matri output display agum.
+            </p>
+          </li>
+          <li>
+            Comparing <span class="important-words">boolean</span> and
+            <span class="important-words">number</span>
+            <div class="code-snippet">
+              <div>
+                <span class="tag-color">let </span>a =
+                <span class="doctype">true</span>;
+              </div>
+              <div>
+                <span class="tag-color">let </span>b =
+                <span class="doctype">false</span>;
+              </div>
+              <div>
+                <span class="tag-color">let </span>c =
+                <span class="color-yellow">0</span>;
+              </div>
+              <div>
+                <span class="tag-color">let </span>d =
+                <span class="color-yellow">1</span>;
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( a == d) ;
+                </div>
+                <div><span class="html-comment">//output: true</span></div>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( a == c) ;
+                </div>
+                <div><span class="html-comment">//output: false</span></div>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( b != d) ;
+                </div>
+                <div><span class="html-comment">//output: true</span></div>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( b != c) ;
+                </div>
+                <div><span class="html-comment">//output: false</span></div>
+              </div>
+            </div>
+            <p>
+              Idhula operand <span class="important-words">a</span> and
+              <span class="important-words">b</span> odha datatype
+              <span class="important-words">boolean</span> operand
+              <span class="important-words">c</span> and
+              <span class="important-words">d</span> odha datatype
+              <span class="important-words"> number</span>.
+              <span class="important-words">==</span> operator type conversion
+              muliyama number ya boolean ah convert panidhum.
+            </p>
+            <p>
+              Type conversion agitha piragu 1 vandu true ah convert agidhum 0
+              false ah convert agidhum adhuku piragu
+              <span class="important-words">==</span> and
+              <span class="important-words">!=</span> operator ku yetha matri
+              output display agum.
+            </p>
+          </li>
+          <li>
+            Comparing <span class="important-words">null</span> and
+            <span class="important-words">undefined</span>
+            <div class="code-snippet">
+              <div>
+                <span class="tag-color">let </span>a =
+                <span class="doctype">null</span> ;
+              </div>
+              <div><span class="tag-color">let </span>b ;</div>
+            </div>
+            <p>
+              <span class="important-words">Null</span> and
+              <span class="important-words">undefined</span> datatype ya
+              <span class="important-words">==</span> operator use pani compare
+              pana adhu odha output <span class="important-words">true</span> nu
+              tha display agum.
+            </p>
+          </li>
+          <li>
+            Comparing <span class="important-words">objects</span>
+            <div class="code-snippet">
+              <div><span class="tag-color">let </span>car1 = {</div>
+              <div class="code-format">
+                <span class="color-yellow">name</span>:
+                <span class="color-green">"Maruti"</span>
+              </div>
+              <div>}</div>
+              <div><span class="tag-color">let </span>car2 = {</div>
+              <div class="code-format">
+                <span class="color-yellow">name</span>:
+                <span class="color-green">"Maruti"</span>
+              </div>
+              <div>}</div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( car1 == car1 )
+                  ;
+                </div>
+                <div><span class="html-comment">//output: true</span></div>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( car1 == car2 )
+                  ;
+                </div>
+                <div><span class="html-comment">//output: false</span></div>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( car1 != car1 )
+                  ;
+                </div>
+                <div><span class="html-comment">//output: false</span></div>
+              </div>
+            </div>
+            <p>
+              First console la car1 and car1 check pandrathu naala
+              <b>true</b> nu vandu iruku but car1 and car2 check panum bodu
+              <span class="important-words">==</span> operator vechi compare
+              panalum ila <span class="important-words">!=</span> operator vechi
+              compare panalum <span class="important-words">false</span> nu tha
+              varum.
+            </p>
+            <p>
+              <b>Note:</b> Epomae vera vera object la same value irundhalum
+              <span class="important-words">==</span> operator vechi compare
+              panalum adhu false nu tha varum because
+              <span class="important-words">==</span> operator doesn't work in
+              objects.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!-- Behaviour of == start here when different datatype -->
+
+      <!-- === and !== operator start here -->
+      <section>
+        <h2>
+          What is <span class="important-words">===</span> and
+          <span class="important-words">!==</span> in JavaScript?
+        </h2>
+        <p>
+          <span class="important-words">===</span> operator ya technical ah
+          <b>strict equality</b> operator nu soluvanga.
+          <span class="important-words">!==</span> operator ya
+          <b>strict inequality</b> operator nu soluavnga.
+          <span class="important-words">==</span> operator matri idhu type
+          conversion la panadhu idhu nambo ena datatype la value kudukuramo
+          adhae datatype la tha comparison panum. First datatype check panum
+          adhu true ah irunduchi na next value check panum adhuvum true ah
+          irundha tha <span class="important-words">true</span> nu display
+          panum. First stage laayae false nu vanduchi na
+          <span class="important-words">false</span> nu tha display panum.
+        </p>
+        <p>
+          <b>Return type:</b> <span class="important-words">==</span>,
+          <span class="important-words">===</span>,
+          <span class="important-words">!=</span>,
+          <span class="important-words">!==</span> inda four operator kum return
+          type <b>boolean</b> tha onnu
+          <span class="important-words">true</span> nu display panum ila
+          <span class="important-words">false</span> nu display panum.
+        </p>
+        <ul>
+          <li>
+            Rendu operand odha datatype different ah irukum podu epdi work
+            agudhu nu pakula.
+            <div class="code-snippet">
+              <div>
+                <span class="tag-color">let </span>a =
+                <span class="color-yellow">34</span>;
+              </div>
+              <div>
+                <span class="tag-color">let </span>b =
+                <span class="color-green">'34'</span>;
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log(a === b);
+                </div>
+
+                <span class="html-comment">// output: false</span>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log(a !== b);
+                </div>
+
+                <span class="html-comment">// output: true</span>
+              </div>
+            </div>
+            <p>
+              Operand <span class="important-words">a</span> odha datatype
+              number <span class="important-words">b</span> odha datatype string
+              so first console la <span class="important-words">false</span> nu
+              varudhu because different datatype adhuvae second console la
+              <span class="important-words">true varudhu</span> because
+              <span class="important-words">!==</span> operator odha velai apdi.
+            </p>
+          </li>
+          <li>
+            Rendu operand la edhana oru operand odha datatype
+            <span class="important-words">NaN</span> ah irunduchi na
+            <div class="code-snippet">
+              <div>
+                <span class="tag-color">let </span>a =
+                <span class="doctype">null</span> ;
+              </div>
+              <div>
+                <span class="tag-color">let </span>b =
+                <span class="color-yellow">10</span>;
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log(a === b);
+                </div>
+                <span class="html-comment">// output: false</span>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log(a !== b);
+                </div>
+
+                <span class="html-comment">// output: true</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            Rendu operand <span class="important-words">Null</span> or
+            <span class="important-words">undefined</span> ah irunduchi na
+            <div class="code-snippet">
+              <div>
+                <span class="tag-color">let </span>a =
+                <span class="doctype">null</span> ;
+              </div>
+              <div>
+                <span class="tag-color">let </span>b =
+                <span class="doctype">undefined</span> ;
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log(a === a);
+                </div>
+                <span class="html-comment">// output: true</span>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log(b === b);
+                </div>
+                <span class="html-comment">// output: true</span>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log(a === b);
+                </div>
+                <span class="html-comment">// output: false</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            When both operands are <span class="important-words">objects</span>
+            <div class="code-snippet">
+              <div><span class="tag-color">let </span>car1 = {</div>
+              <div class="code-format">
+                <span class="color-yellow">name</span>:
+                <span class="color-green">"Audi"</span>
+              </div>
+              <div>}</div>
+              <div><span class="tag-color">let </span>car2 = {</div>
+              <div class="code-format">
+                <span class="color-yellow">name</span>:
+                <span class="color-green">"Audi"</span>
+              </div>
+              <div>}</div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( car1 === car1
+                  ) ;
+                </div>
+                <div><span class="html-comment">//output: true</span></div>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( car1 === car2
+                  ) ;
+                </div>
+                <div><span class="html-comment">//output: false</span></div>
+              </div>
+              <div class="code-spacing">
+                <div>
+                  <span class="color-yellow">console.</span>log ( car1 !== car1
+                  ) ;
+                </div>
+                <div><span class="html-comment">//output: false</span></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- == and !== operator start here -->
+
+      <!-- == Vs === start here -->
+      <section>
+        <h3>Comparsion and Difference Between == and === in JavaScript</h3>
+        <div class="table-responsive">
+          <table>
+            <tr>
+              <th>S.no</th>
+              <th>==</th>
+              <th>===</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Rendu operand ya compare panum</td>
+              <td>Rendu operand ya compare panum</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                returns true if, operand have same data type and same value,
+                apdi ila it return false.
+              </td>
+              <td>
+                returns true only if, operand have same data type and same
+                value, apdi ila it return false.
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                Oru vela rendu operand la oru operand different datatype ah
+                irunduchi na adhu type conversion panithu value va check panum.
+              </td>
+              <td>
+                Idhu type conversion la panadhu nambo kudukura datatype vechi
+                check panum.
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Idhuku innoru peru loose equality</td>
+              <td>Idhuku innoru peru strict equality</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>
+                Idhu abstract equality comparison algorithm ya follow panum.
+              </td>
+              <td>
+                Idhu strict equality comparison algorithm ya follow panum.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <!-- == Vs === end here -->
+    </main>
+
+    <footer>
+      <p>Made with 💖 | <span>webArtist</span></p>
+    </footer>
+  </body>
+</html>

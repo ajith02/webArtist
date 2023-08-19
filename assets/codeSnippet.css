@@ -13,7 +13,7 @@
   }
   
   .code-spacing {
-    padding-block: 1em;
+    padding-top: 1em !important;
   }
   
   .code-snippet p{
